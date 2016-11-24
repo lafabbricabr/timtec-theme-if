@@ -19,7 +19,7 @@ def get_version(*file_paths):
         return version_match.group(1)
     raise RuntimeError('Unable to find version string.')
 
-version = get_version('if', '__init__.py')
+version = get_version('if_theme', '__init__.py')
 
 if sys.argv[-1] == 'publish':
     try:
@@ -42,7 +42,7 @@ readme = open('README.md').read()
 history = open('HISTORY.md').read().replace('.. :changelog:', '')
 
 setup(
-    name='if',
+    name='timtec-theme-if',
     version=version,
     description="""Timtec Theme IF""",
     long_description=readme + '\n\n' + history,
@@ -50,12 +50,12 @@ setup(
     author_email='moa.moda@gmail.com',
     url='https://github.com/institutotim/timtec-theme-if',
     packages=[
-        'if',
+        'if_theme',
     ],
     include_package_data=True,
     install_requires=[],
     zip_safe=False,
-    keywords='if',
+    keywords='timtec-theme-if',
     classifiers=[
         'Development Status :: 3 - Alpha',
         'Framework :: Django',
