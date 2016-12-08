@@ -84,6 +84,33 @@
                     font-size: @font-size-base + 4px;
                 }
             }
+            .messages {
+                li a {
+                    padding: 10px 15px;
+                    border-bottom: 1px solid #BBBBBB;
+                    background-color: #f0f0f0 !important;
+
+                    .title {
+                        font-size: 10pt;
+                        font-weight: bold;
+                        text-transform: uppercase;
+
+                        i {
+                            margin-right: 4px;
+                        }
+                    }
+                    .course {
+                        font-size: 8pt
+                    }
+
+                    &.read {
+                        background-color: #fff !important;
+                        .title {
+                            color: #666;
+                        }
+                    }
+                }
+            }
         }
 
         #session-nav {
@@ -115,4 +142,3 @@
         }
     }
 }
-
