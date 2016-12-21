@@ -1,63 +1,67 @@
 {% extends 'default:account/signup.html' %}
 {% load i18n %}
+{% load compress %}
 
 {% block js %}
-<script type="text/javascript" charset="utf-8">
-    (function(){
+    {{ block.super }}
+    {% compress js %}
+        <script type="text/javascript" charset="utf-8">
+            (function(){
 
-        function show_how_you_know_complement() {
-            $('#div-how_you_know_complement').show();
-            $('#div-how_you_know_complement input').prop('required', true);
-        }
-
-        function hide_how_you_know_complement() {
-            $('#div-how_you_know_complement').hide();
-            $('#div-how_you_know_complement input').prop('required', false);
-        }
-
-        function load_states() {
-
-            $.get("/api/states", function(item){
-                options = "<option value=''>---</option>\n";
-                for(state in item) {
-                    state = item[state];
-                    options += "<option value='"+ state.code +"'>"+ state.name +"</option>\n";
+                function show_how_you_know_complement() {
+                    $('#div-how_you_know_complement').show();
+                    $('#div-how_you_know_complement input').prop('required', true);
                 }
-                $("select[name=state]").empty().append(options);
-            });
-        }
 
-        function load_cities(state) {
-            $.get("/api/cities", {'state': state}, function(item){
-                options = "<option value=''>---</option>\n";
-                for(city in item) {
-                    city = item[city];
-                    options += "<option value='"+ city.name +"'>"+ city.name +"</option>\n";
+                function hide_how_you_know_complement() {
+                    $('#div-how_you_know_complement').hide();
+                    $('#div-how_you_know_complement input').prop('required', false);
                 }
-                $("select[name=city]").empty().append(options);
-            });
-        }
 
-        $(document).ready(function() {
-            load_states();
+                function load_states() {
 
-            hide_how_you_know_complement();
-            $("select[name=how_you_know]").change(function(){
-                current_value = $(this).val();
-                if(current_value == "Através da Imprensa" || current_value == "Outro") {
-                    show_how_you_know_complement();
-                } else {
+                    $.get("/api/states", function(item){
+                        options = "<option value=''>---</option>\n";
+                        for(state in item) {
+                            state = item[state];
+                            options += "<option value='"+ state.code +"'>"+ state.name +"</option>\n";
+                        }
+                        $("select[name=state]").empty().append(options);
+                    });
+                }
+
+                function load_cities(state) {
+                    $.get("/api/cities", {'state': state}, function(item){
+                        options = "<option value=''>---</option>\n";
+                        for(city in item) {
+                            city = item[city];
+                            options += "<option value='"+ city.name +"'>"+ city.name +"</option>\n";
+                        }
+                        $("select[name=city]").empty().append(options);
+                    });
+                }
+
+                $(document).ready(function() {
+                    load_states();
+
                     hide_how_you_know_complement();
-                }
-            });
+                    $("select[name=how_you_know]").change(function(){
+                        current_value = $(this).val();
+                        if(current_value == "Através da Imprensa" || current_value == "Outro") {
+                            show_how_you_know_complement();
+                        } else {
+                            hide_how_you_know_complement();
+                        }
+                    });
 
-            $("select[name=state]").change(function(){
-                current_value = $(this).val();
-                load_cities(current_value);
-            });
-        });
-    })();
-</script>
+                    $("select[name=state]").change(function(){
+                        current_value = $(this).val();
+                        load_cities(current_value);
+                    });
+                });
+            })();
+        </script>
+    {% endcompress %}
 {% endblock %}
 
 <!-- TABLET AND DESKTOP -->
