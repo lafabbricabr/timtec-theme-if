@@ -19,18 +19,21 @@
                 }
 
                 function load_states() {
-
                     $.get("/api/states", function(item){
                         options = "<option value=''>---</option>\n";
                         for(state in item) {
                             state = item[state];
                             options += "<option value='"+ state.code +"'>"+ state.name +"</option>\n";
                         }
+
                         $("select[name=state]").empty().append(options);
+                        $("select[name=state]").val('{{ form.state.value }}');
+                        load_cities('{{ form.state.value }}', true);
+
                     });
                 }
 
-                function load_cities(state) {
+                function load_cities(state, first_call) {
                     $.get("/api/cities", {'state': state}, function(item){
                         options = "<option value=''>---</option>\n";
                         for(city in item) {
@@ -38,6 +41,10 @@
                             options += "<option value='"+ city.name +"'>"+ city.name +"</option>\n";
                         }
                         $("select[name=city]").empty().append(options);
+
+                        if(first_call) {
+                            $("select[name=city]").val('{{ form.city.value }}');
+                        }
                     });
                 }
 
