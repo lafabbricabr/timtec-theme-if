@@ -1,34 +1,59 @@
 // MAIN FOOTER
 // ********************************************************************* //
-#main-footer {
-    background: transparent;
-    background-color: #F5F5F7;
-    .clearfix();
-    padding-bottom: 0;
-    padding-top: 0;
-    position: relative;
-    z-index: 1000;
-    @media (min-width: @screen-md-min) {
-        padding: 0 0 40px 0;
+// Color variables (appears count calculates by raw css)
+@color0: #8cc63f; // Appears 3 times
+
+
+// Height variables (appears count calculates by raw css)
+@height0: 150px; // Appears 2 times
+
+.section-primary-mooc {
+    padding: 30px 0 10px 0;
+    background-color: #eeeeee !important;
+    color: @color0;
+}
+.footertitle {
+    color: #89c3ff;
+    font-family: "ek-mukta-extralight", Fallback, times-new-roman;
+}
+.footer_mooc {
+    a {
+        color: @color0;
     }
-    .wrap-footer {
-        background: #FFFFFF;
-        box-shadow: 0px 0px 26px 0px @gray-light;
-        padding: 30px 0;
-        ul {
-            text-align: right;
-            li {
-                font-family: "ek-mukta-extralight";
-                font-size: 24px;
-                a {
-                    color: #000000;
-                    text-decoration: none !important;
-                }
-            }
+}
+.footertitle_mooc {
+    color: #447406;
+    font-family: "ek-mukta-extralight", Fallback, times-new-roman;
+    font-weight: bold;
+    font-size: 12pt;
+    a {
+        color: @color0;
+        &:hover {
+            color: #5da203;
         }
     }
 }
+.col-md-3.footerborder-left {
+    -moz-border-image: -moz-linear-gradient(right, rgba(24,86,154,1), rgba(1,60,125,1)) 1 100%;
+    -o-border-image: -o-linear-gradient(right, rgba(24,86,154,1), rgba(1,60,125,1)) 1 100%;
+    -webkit-border-image: -webkit-gradient(linear, 100% 0, 0 0, from(rgba(24,86,154,1)), to(rgba(1,60,125,1))) 1 100%;
+    -webkit-border-image: -webkit-linear-gradient(right, rgba(24,86,154,1), rgba(1,60,125,1)) 1 100%;
+    border-image: linear-gradient(to right, rgba(24,86,154,1), rgba(1,60,125,1)) 1 100%;
+    border-style: solid;
+    border-width: 3px 0 3px 3px;
+    height: @height0;
+}
+.col-md-4.footerborder-left {
+    -moz-border-image: -moz-linear-gradient(right, rgba(24,86,154,1), rgba(1,60,125,1)) 1 100%;
+    -o-border-image: -o-linear-gradient(right, rgba(24,86,154,1), rgba(1,60,125,1)) 1 100%;
+    -webkit-border-image: -webkit-gradient(linear, 100% 0, 0 0, from(rgba(24,86,154,1)), to(rgba(1,60,125,1))) 1 100%;
+    -webkit-border-image: -webkit-linear-gradient(right, rgba(24,86,154,1), rgba(1,60,125,1)) 1 100%;
+    border-image: linear-gradient(to right, rgba(24,86,154,1), rgba(1,60,125,1)) 1 100%;
+    border-style: solid;
+    border-width: 3px 0 3px 3px;
+    height: @height0;
+}
 
 .brand-timtec {
-	padding-top: 40px;
+    padding-top: 40px;
 }
