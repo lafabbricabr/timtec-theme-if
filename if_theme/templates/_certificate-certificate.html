@@ -23,7 +23,8 @@
             <p>certifica que</p>
             <h2 class="student">{{ object.course_student.user.get_full_name }}</h2>
             <p>
-                Concluiu o curso de <strong>{{ object.course_student.course.name }}</strong>, com <strong>40</strong> horas em {{ object.modified_date | date:"d/m/Y" }}
+                Concluiu o curso de <strong>{{ object.course_student.course.name }}</strong>, com
+                <strong>{{ object.course_student.course.total_hours }}</strong> horas em {{ object.modified_date | date:"d/m/Y" }}
             </p>
 
             <!-- TODO inserir edição de cidade -->
