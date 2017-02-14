@@ -1,0 +1,157 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2017-02-14 00:06+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+
+#: templates/account/login_modal.html:10
+msgid "You need to sign in or up to see this content"
+msgstr ""
+
+#: templates/account/login_modal.html:18 templates/account/login_modal.html:49
+msgid "Sign In"
+msgstr ""
+
+#: templates/account/login_modal.html:24
+msgid "Login"
+msgstr ""
+
+#: templates/account/login_modal.html:27
+msgid "E-mail or login"
+msgstr ""
+
+#: templates/account/login_modal.html:34 templates/account/login_modal.html:36
+#: templates/account/signup.html:178 templates/account/signup.html.py:314
+#: templates/ifs/signup-completion.html:47
+msgid "Password"
+msgstr ""
+
+#: templates/account/login_modal.html:43
+msgid "Forgot my password"
+msgstr ""
+
+#: templates/account/login_modal.html:64
+msgid "Signup"
+msgstr ""
+
+#: templates/account/signup.html:78 templates/account/signup.html.py:202
+#: templates/account/signup.html:229 templates/account/signup.html.py:337
+#: templates/header.html:5
+msgid "Sign Up"
+msgstr ""
+
+#: templates/account/signup.html:158 templates/account/signup.html.py:160
+#: templates/account/signup.html:294 templates/account/signup.html.py:296
+msgid "Username"
+msgstr ""
+
+#: templates/account/signup.html:168 templates/account/signup.html.py:304
+#: templates/ifs/signup-completion.html:37
+msgid "E-mail"
+msgstr ""
+
+#: templates/account/signup.html:170
+msgid "Your e-mail"
+msgstr ""
+
+#: templates/account/signup.html:180 templates/account/signup.html.py:316
+#: templates/ifs/signup-completion.html:49
+msgid "Really strong password"
+msgstr ""
+
+#: templates/account/signup.html:181 templates/account/signup.html.py:317
+#: templates/ifs/signup-completion.html:50
+msgid "Password confirmation"
+msgstr ""
+
+#: templates/account/signup.html:194 templates/account/signup.html.py:329
+#, python-format
+msgid ""
+"I agree to the <a href=\"%(terms_url)s\" target=\"_blank\">Terms of Use</a>"
+msgstr ""
+
+#: templates/account/signup.html:344
+msgid "Facebook connect"
+msgstr ""
+
+#: templates/administration/courses.html:11 templates/courses.html:43
+#: templates/courses.html.py:50
+msgid "Courses"
+msgstr ""
+
+#: templates/administration/users.html:11
+msgid "Users"
+msgstr ""
+
+#: templates/courses.html:65
+msgid "Soon"
+msgstr ""
+
+#: templates/courses.html:86
+msgid "Go to course"
+msgstr ""
+
+#: templates/courses.html:90
+msgid "More information"
+msgstr ""
+
+#: templates/ifs/signup-completion.html:10
+msgid "Please verify and complete you account information"
+msgstr ""
+
+#: templates/ifs/signup-completion.html:14
+msgid "Full Name"
+msgstr ""
+
+#: templates/ifs/signup-completion.html:59
+msgid "City"
+msgstr ""
+
+#: templates/ifs/signup-completion.html:69
+msgid "Campus"
+msgstr ""
+
+#: templates/ifs/signup-completion.html:107
+#: templates/ifs/signup-completion.html:109
+msgid "Academic Identifier"
+msgstr ""
+
+#: templates/ifs/signup-completion.html:117
+#: templates/ifs/signup-completion.html:119
+msgid "Course"
+msgstr ""
+
+#: templates/ifs/signup-completion.html:127
+#: templates/ifs/signup-completion.html:129
+msgid "Class"
+msgstr ""
+
+#: templates/ifs/signup-completion.html:139
+msgid "Save"
+msgstr ""
+
+#: templates/notes.html:7
+msgid "My Notes"
+msgstr ""
+
+#: templates/profile-edit.html:7 templates/profile.html:7
+msgid "Profile"
+msgstr ""
+
+#: templates/user-courses.html:7
+msgid "My Courses"
+msgstr ""
