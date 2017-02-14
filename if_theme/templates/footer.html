@@ -14,29 +14,29 @@
 
                                         <div class="col-md-3 text-left">
                                         	<p class="footertitle_mooc">Sobre</p>
-                                        	<a href="pages/about">
+                                        	<a href="{% url 'flatpage' url='/about' %}">
                                                 <p class="">Conheça TIM Tec</p>
                                             </a>
-                                            <a href="#">
-                                            <p class="">Contato</p>
+                                            <a href="#" data-toggle="modal" data-target="#modal-contact">
+                                                <p class="">Contato</p>
                                             </a>
 
                                         </div>
                                         <div class="col-md-3 text-left">
                                             <p class="footertitle_mooc">Cursos</p>
-                                            <a href="#">
+                                            <a href="{% url 'courses' %}">
                                                 <p class="">Lista de Cursos</p>
                                             </a>
                                         </div>
                                         <div class="col-md-3 text-left">
                                         	<p class="footertitle_mooc">Cadastre-se</p>
-                                            <a href="#">
+                                            <a href="{% url 'account_signup' %}">
                                                 <p class="">Cadastrar perfil</p>
                                             </a>
-                                            <a href="#">
+                                            <a href="{% url 'account_login' %}">
                                                 <p class="">Entrar</p>
                                             </a>
-                                            <a href="#">
+                                            <a href="{% url 'account_reset_password' %}">
                                             <p class="">Recuperar senha</p>
                                             </a>
                                         </div>
