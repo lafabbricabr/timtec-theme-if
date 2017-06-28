@@ -1,7 +1,7 @@
-# IF Theme - Timtec
+# Nutrir Theme - Timtec
 
 
 Sobre
 ------
 
-Este é o tema Nutrir para o software [Timtec 4.0](https://github.com/hacklabr/timtec).
+Este é o tema Nutrir para o software [Timtec 4.0](https://github.com/institutotim/timtec).
