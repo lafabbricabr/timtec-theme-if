@@ -19,7 +19,7 @@ def get_version(*file_paths):
         return version_match.group(1)
     raise RuntimeError('Unable to find version string.')
 
-version = get_version('if_theme', '__init__.py')
+version = get_version('timtec-theme-nutrir', '__init__.py')
 
 if sys.argv[-1] == 'publish':
     try:
@@ -42,20 +42,20 @@ readme = open('README.md').read()
 history = open('HISTORY.md').read().replace('.. :changelog:', '')
 
 setup(
-    name='timtec-theme-if',
+    name='timtec-theme-nutrir',
     version=version,
-    description="""Timtec Theme IF""",
+    description="""Nutrir Theme""",
     long_description=readme + '\n\n' + history,
-    author='Moacir Moda',
-    author_email='moa.moda@gmail.com',
-    url='https://github.com/institutotim/timtec-theme-if',
+    author='La Fabbrica',
+    author_email='felipecabral@lfdb.com.br',
+    url='https://github.com/lafabbrica/timtec-theme-nutrir',
     packages=[
-        'if_theme',
+        'timtec-theme-nutrir',
     ],
     include_package_data=True,
     install_requires=[],
     zip_safe=False,
-    keywords='timtec-theme-if',
+    keywords='timtec-theme-nutrir',
     classifiers=[
         'Development Status :: 3 - Alpha',
         'Framework :: Django',
