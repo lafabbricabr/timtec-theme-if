@@ -1,4 +1,4 @@
 include LICENSE
 include README.md
-recursive-include if_theme/static *
-recursive-include if_theme/templates *
+recursive-include timtec-theme-nutrir/static *
+recursive-include timtec-theme-nutrir/templates *
