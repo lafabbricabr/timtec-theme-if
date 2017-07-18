@@ -1,0 +1,7 @@
+{% extends 'default:header.html' %}
+{% load is_coordinator %}
+{% load i18n %}
+
+{% block header_signup_link %}
+    <a class="dropdown-toggle" href="{% url 'account_signup' %}">{% trans 'Sign Up' %}</a>
+{% endblock %}
