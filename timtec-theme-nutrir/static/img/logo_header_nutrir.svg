@@ -9,9 +9,9 @@
    xmlns="http://www.w3.org/2000/svg"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
-   width="130"
-   height="90"
-   viewBox="0 0 34.395854 23.812511"
+   width="150"
+   height="100"
+   viewBox="0 0 39.687514 26.458346"
    version="1.1"
    id="svg282"
    inkscape:version="0.92.1 r15371"
@@ -26,7 +26,7 @@
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
      inkscape:zoom="4.057971"
-     inkscape:cx="172.69909"
+     inkscape:cx="168.38659"
      inkscape:cy="70"
      inkscape:document-units="mm"
      inkscape:current-layer="layer1"
@@ -53,9 +53,9 @@
      inkscape:label="Camada 1"
      inkscape:groupmode="layer"
      id="layer1"
-     transform="translate(0,-273.18739)">
+     transform="translate(0,-270.54156)">
     <g
-       transform="matrix(0.09784254,0,0,-0.09784254,0.20380462,296.79107)"
+       transform="matrix(0.11045961,0,0,-0.11045961,0.07340446,296.92147)"
        inkscape:label="ink_ext_XXXXXX"
        id="g18"
        inkscape:export-filename="/home/endeavour/2017_06_vagrant_ubuntu_16_04_nutrir/timtec-theme-nutrir/timtec-theme-nutrir/static/img/logo_header_nutrir.png"

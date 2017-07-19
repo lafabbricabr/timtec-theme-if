@@ -5,120 +5,12 @@
             <div class="container">
 
                 <div class="row">
-                    <div class="col-md-12">
+                    <div class="col-md-12 text-center">
+                    <p><a href="http://timtec.com.br" target="_blank">TIM Tec é um Software Livre desenvolvido pelo Instituto TIM - 2016</a></p>
 
-                        <div class="section">
-                            <div class="container">
-                                <div class="row">
-                                    <div class="col-md-8 footer_mooc">
-
-                                        <div class="col-md-3 text-left">
-                                        	<p class="footertitle_mooc">Sobre</p>
-                                        	<a href="{% url 'flatpage' url='/about' %}">
-                                                <p class="">Conheça TIM Tec</p>
-                                            </a>
-                                            <a href="#" data-toggle="modal" data-target="#modal-contact">
-                                                <p class="">Contato</p>
-                                            </a>
-
-                                        </div>
-                                        <div class="col-md-3 text-left">
-                                            <p class="footertitle_mooc">Cursos</p>
-                                            <a href="{% url 'courses' %}">
-                                                <p class="">Lista de Cursos</p>
-                                            </a>
-                                        </div>
-                                        <div class="col-md-3 text-left">
-                                        	<p class="footertitle_mooc">Cadastre-se</p>
-                                            <a href="{% url 'account_signup' %}">
-                                                <p class="">Cadastrar perfil</p>
-                                            </a>
-                                            <a href="{% url 'account_login' %}">
-                                                <p class="">Entrar</p>
-                                            </a>
-                                            <a href="{% url 'account_reset_password' %}">
-                                            <p class="">Recuperar senha</p>
-                                            </a>
-                                        </div>
-                                        <div class="col-md-3 text-left">
-                                        	<p class="footertitle_mooc">Rede</p>
-                                        	<a href="http://timtec.com.br/pt/conheca-a-rede-tim-tec/">
-                                             <p class="">Conheça a Rede TIM Tec</p>
-                                            </a>
-                                        </div>
-                                    </div>
-
-                                    <div class="col-md-4 text-center">
-                                        <div class="row">
-        	                            	<a href="https://institutotim.org.br"><img class="img-responsive" src="{% static 'img/logo_footer_if.png' %}"></a>
-                                        </div>
-                                        <div class="row"><br><br></div>
-                                    	<div class="row">
-
-	                                    	<h5 class="footertitle_mooc">Instituto Federal nas redes</h5>
-	                                    	<div class="col-md-12 footertitle_mooc">
-			                                <a href="#"><i class="fa fa-fw fa-lg fa-at"></i></a>
-			                                <a href="#"><i class="fa fa-facebook fa-fw fa-lg "></i></a>
-			                                <a href="#"><i class="fa fa-fw hub fa-lg fa-twitter"></i></a>
-	                                    	</div>
-                                    	</div>
-                                    </div>
-
-                                    <div class="col-md-12">
-                                        <br><br>
-                                    </div>
-                                    <div class="col-md-12 text-center footertitle_mooc">
-                                        <a href="http://timtec.com.br/pt">
-                                            TIM Tec é um Software Livre desenvolvido pelo Instituto TIM - 2017
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
                     </div>
                 </div>
             </div>
         </div>
 
-        </footer>
-
-<div class="modal fade" id="modal-about">
-    <div class="modal-dialog">
-        <div class="modal-content">
-            {% include '_modal_about.html' %}
-            <div class="modal-footer">
-                <button type="button" class="btn btn-default" data-dismiss="modal">Fechar</button>
-            </div>
-        </div><!-- /.modal-content -->
-    </div><!-- /.modal-dialog -->
-</div><!-- /.modal -->
-
-
-
-<div class="modal fade" id="modal-contact">
-    <div class="modal-dialog">
-        <div class="modal-content">
-            <div class="modal-header">
-                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-                <h4 class="modal-title">Contato</h4>
-            </div>
-            <div class="modal-body">
-                <div class="row">
-                    <div class="col-lg-8 col-lg-offset-1">
-                        <form class="form-horizontal" method="post" action="{% url 'contact' %}">
-                            {% csrf_token %}
-                            {% include '_contact_form.html' %}
-                            <div class="submit textright">
-                                <button type="reset" class="btn btn-danger">Limpar</button>
-                                <button type="submit" class="btn btn-success">Enviar</button>
-                            </div>
-                        </form>
-                    </div>
-                </div>
-            </div>
-            <div class="modal-footer">
-                <button type="button" class="btn btn-default" data-dismiss="modal">Fechar</button>
-            </div>
-        </div><!-- /.modal-content -->
-    </div><!-- /.modal-dialog -->
-</div><!-- /.modal -->
+</footer>
