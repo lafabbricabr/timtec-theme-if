@@ -6,11 +6,23 @@
     margin-top: 0;
     // banner
     #highlight {
-        background-image: url(../img/banner-home.jpg);
+        // background-image: url(../img/banner-home.jpg);
         background-position: bottom center;
         background-size: cover;
         max-height: 630px;
         text-align: center;
+        @media (max-width: @screen-xs-max) {
+            background-image: url(../img/2017_timtec_background_nutrir_04_sm.jpg);
+        }
+        @media (max-width: @screen-sm-max) {
+            background-image: url(../img/2017_timtec_background_nutrir_03_sm.jpg);
+        }
+        @media (max-width: @screen-md-max) {
+            background-image: url(../img/2017_timtec_background_nutrir_02_sm.jpg);
+        }
+        @media (min-width: @screen-lg-min) {
+            background-image: url(../img/2017_timtec_background_nutrir_01_sm.jpg);
+        }                    
         .text {
             color: #000000;
             height: 280px;
