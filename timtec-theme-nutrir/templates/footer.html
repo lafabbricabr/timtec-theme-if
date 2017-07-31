@@ -1,4 +1,6 @@
 {% load static %}
+{% load i18n %}
+
 <div class="footer-bottom">
 	<div class="container">
 		<div class="row section-primary-mooc">
@@ -13,21 +15,30 @@
 </div>
 
                     
-
-
-
-<!-- <footer class="section section-primary-mooc">
-
-        <div class="section">
-            <div class="container">
-
+<div class="modal fade" id="modal-contact">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                <h4 class="modal-title">{% trans 'Contact' %}</h4>
+            </div>
+            <div class="modal-body">
                 <div class="row">
-                    <div class="col-md-12 text-center">
-                    <p><a href="http://timtec.com.br" target="_blank">TIM Tec é um Software Livre desenvolvido pelo Instituto TIM - 2016</a></p>
-
+                    <div class="col-lg-8 col-lg-offset-1">
+                        <form class="form-horizontal" method="post" action="{% url 'contact' %}">
+                            {% csrf_token %}
+                            {% include '_contact_form.html' %}
+                            <div class="submit textright">
+                                <button type="reset" class="btn btn-danger">{% trans 'Clear' %}</button>
+                                <button type="submit" class="btn btn-success">{% trans 'Send' %}</button>
+                            </div>
+                        </form>
                     </div>
                 </div>
             </div>
-        </div>
-
-</footer> -->
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">{% trans 'Close' %}</button>
+            </div>
+        </div><!-- /.modal-content -->
+    </div><!-- /.modal-dialog -->
+</div><!-- /.modal -->
