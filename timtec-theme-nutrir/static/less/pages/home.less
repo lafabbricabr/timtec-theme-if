@@ -85,13 +85,12 @@
     // courses section
     #courses {
         @media (min-width: @screen-md-min) {
-            margin-top: 80px;
+            margin-top: 40px;
         }
         .course {
             .info {
                 height: auto;
                 @media (min-width: @screen-sm-min) {
-                    height: 120px;
                 }
                 padding-left: 0;
                 padding-right: 0;
@@ -99,11 +98,15 @@
                     margin-bottom: 5px;
                 }
                 .abstract {
-                    display: none;
+
                 }
             }
             .enroll {
                 font-family: "pompiere";
+            }
+            .resume{
+                font-size: 18px;
+                font-family: PtSerif-Regular;
             }
         }
         header {
@@ -125,6 +128,9 @@
         box-shadow: inset  0  8px 26px -8px @gray-light;
         padding-bottom: 0;
         padding-top: 30px;
+        h1{
+            font-size: 60px;
+        }
         header {
             border-bottom: none;
             color: #1F1F1F;
@@ -140,7 +146,7 @@
             margin-bottom: 0;
             padding-bottom: 0;
             p {
-                font-size: 20px;
+                font-size: 25px;
                 line-height: 1.2;
                 text-align: left;
             }
@@ -196,6 +202,7 @@
                     }
                     p{
                         color: #1b5e8b;
+                        font-family: PtSerif-Regular;
                     }                    
                 }
             }
@@ -211,6 +218,7 @@
                     }
                     p{
                         color: #fa7563;
+                        font-family: PtSerif-Regular;                        
                     }                      
                 }
             }
@@ -226,6 +234,7 @@
                     }
                     p{
                         color: #f37321;
+                        font-family: PtSerif-Regular;                        
                     }                                       
                 }
             }
