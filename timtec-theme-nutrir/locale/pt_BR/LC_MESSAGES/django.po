@@ -3,155 +3,2756 @@
 # This file is distributed under the same license as the PACKAGE package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
-#, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2017-02-14 00:06+0000\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"POT-Creation-Date: 2017-04-24 11:02-0300\n"
+"PO-Revision-Date: 2017-08-09 11:36-0306\n"
+"Last-Translator:   <admin@admin.com.br>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: \n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n > 1);\n"
+"X-Translated-Using: django-rosetta 0.7.6\n"
 
-#: templates/account/login_modal.html:10
-msgid "You need to sign in or up to see this content"
+#: accounts/adapter.py:13
+msgid "Usernames can only contain letters, digits and ./-/_."
 msgstr ""
+"Seu nome de usuário não deve conter espaço, apenas letras, números e ./-/_."
 
-#: templates/account/login_modal.html:18 templates/account/login_modal.html:49
-msgid "Sign In"
-msgstr ""
+#: accounts/admin.py:14
+msgid "Timtec Info"
+msgstr "Informações do Timtec"
 
-#: templates/account/login_modal.html:24
-msgid "Login"
-msgstr ""
+#: accounts/forms.py:27
+msgid "email"
+msgstr "email"
 
-#: templates/account/login_modal.html:27
-msgid "E-mail or login"
-msgstr ""
-
-#: templates/account/login_modal.html:34 templates/account/login_modal.html:36
-#: templates/account/signup.html:178 templates/account/signup.html.py:314
-#: templates/ifs/signup-completion.html:47
+#: accounts/forms.py:29 themes/default/templates/_login_modal.html:25
+#: themes/default/templates/_login_modal.html:27
+#: themes/default/templates/_signup_modal.html:21
+#: themes/default/templates/account/email_confirmed.html:18
+#: themes/default/templates/account/email_confirmed.html:20
+#: themes/default/templates/account/login.html:30
+#: themes/default/templates/account/login.html:32
+#: themes/default/templates/account/login.html:98
+#: themes/default/templates/account/login.html:100
+#: themes/default/templates/account/login_modal.html:34
+#: themes/default/templates/account/login_modal.html:36
+#: themes/default/templates/account/login_modal.html:86
+#: themes/default/templates/account/password_reset_from_key_done.html:31
+#: themes/default/templates/account/password_reset_from_key_done.html:33
+#: themes/default/templates/account/password_reset_from_key_done.html:81
+#: themes/default/templates/account/password_reset_from_key_done.html:83
+#: themes/default/templates/account/signup.html:40
+#: themes/default/templates/account/signup.html:119
+#: themes/default/templates/ifs/signup-completion.html:47
+#: themes/default/templates/profile-edit.html:216
 msgid "Password"
-msgstr ""
+msgstr "Senha"
 
-#: templates/account/login_modal.html:43
-msgid "Forgot my password"
-msgstr ""
+#: accounts/forms.py:30
+msgid "Password (again)"
+msgstr "Senha (novamente)"
 
-#: templates/account/login_modal.html:64
-msgid "Signup"
-msgstr ""
+#: accounts/forms.py:31 accounts/forms.py:76 accounts/models.py:157
+#: themes/default/templates/profile-edit.html:137
+msgid "Province"
+msgstr "Estado"
 
-#: templates/account/signup.html:78 templates/account/signup.html.py:202
-#: templates/account/signup.html:229 templates/account/signup.html.py:337
-#: templates/header.html:5
-msgid "Sign Up"
-msgstr ""
+#: accounts/forms.py:32 accounts/forms.py:77 accounts/models.py:33
+#: themes/default/templates/ifs/signup-completion.html:59
+#: themes/default/templates/profile-edit.html:147
+msgid "City"
+msgstr "Cidade"
 
-#: templates/account/signup.html:158 templates/account/signup.html.py:160
-#: templates/account/signup.html:294 templates/account/signup.html.py:296
+#: accounts/forms.py:52
+msgid "The two password fields didn't match."
+msgstr "As duas senhas são diferentes."
+
+#: accounts/forms.py:62
+msgid "Accept "
+msgstr "Aceitar"
+
+#: accounts/forms.py:67
+#, python-format
+msgid "You must agree to the Terms of Use to use %(site_name)s."
+msgstr "Você deve concordar com os Termos de Uso para usar o %(site_name)s."
+
+#: accounts/forms.py:74
+msgid "First Name"
+msgstr "Nome"
+
+#: accounts/forms.py:75
+msgid "Last Name"
+msgstr "Sobrenome"
+
+#: accounts/forms.py:78 accounts/models.py:37
+msgid "How do you know the platform?"
+msgstr "Como você conheceu a plataforma TIM Tec?"
+
+#: accounts/forms.py:79 accounts/models.py:38
+msgid "Complement for \"How do you know the platform?\""
+msgstr "Complemento para \"Como você conheceu a plataforma TIM Tec?\""
+
+#: accounts/models.py:18 themes/default/templates/_signup_modal.html:7
+#: themes/default/templates/account/signup.html:20
+#: themes/default/templates/account/signup.html:22
+#: themes/default/templates/account/signup.html:99
+#: themes/default/templates/account/signup.html:101
+#: themes/default/templates/administration/permissions.html:57
+#: themes/default/templates/administration/permissions.html:106
+#: themes/default/templates/administration/users.html:85
+#: themes/default/templates/class_edit.html:153
+#: themes/default/templates/course-evaluations.html:278
+#: themes/default/templates/evaluations.html:207
+#: themes/default/templates/message.html:41
+#: themes/default/templates/messages.html:118
+#: themes/default/templates/profile-edit.html:196
 msgid "Username"
+msgstr "Nome de usuário"
+
+#: accounts/models.py:19
+msgid ""
+"Required. 30 characters or fewer. Letters, numbers and ./+/-/_ characters"
+msgstr "Obrigatório. 30 caracteres ou menos. Letras, números e . + - _"
+
+#: accounts/models.py:22
+msgid "Enter a valid username."
+msgstr "Insira um nome válido."
+
+#: accounts/models.py:25
+msgid "First name"
+msgstr "Nome"
+
+#: accounts/models.py:26
+msgid "Last name"
+msgstr "Sobrenome"
+
+#: accounts/models.py:27
+msgid "Staff status"
+msgstr "Situação"
+
+#: accounts/models.py:28 core/models.py:814
+#: themes/default/templates/administration/users.html:89
+msgid "Active"
+msgstr "Ativo"
+
+#: accounts/models.py:29
+msgid "Date joined"
+msgstr "Data de inscrição"
+
+#: accounts/models.py:31 core/models.py:482 core/models.py:535
+msgid "Picture"
+msgstr "Estrutura"
+
+#: accounts/models.py:32 core/forms.py:15
+#: themes/default/templates/profile-edit.html:127
+msgid "Occupation"
+msgstr "Ocupação"
+
+#: accounts/models.py:34 themes/default/templates/profile-edit.html:157
+msgid "Site"
+msgstr "Página"
+
+#: accounts/models.py:35 core/models.py:480 core/models.py:534
+#: themes/default/templates/_course_professors_modal.html:77
+#: themes/default/templates/_course_professors_modal.html:78
+msgid "Biography"
+msgstr "Biografia"
+
+#: accounts/models.py:36 themes/default/templates/profile-edit.html:167
+msgid "Birth Date"
+msgstr "Data de Nascimento"
+
+#: accounts/models.py:39
+msgid "Accepted terms and condition"
+msgstr "Aceitou os termos de uso"
+
+#: accounts/models.py:47
+msgid "user"
+msgstr "usuário"
+
+#: accounts/models.py:48
+msgid "users"
+msgstr "usuários"
+
+#: accounts/models.py:95
+#, python-format
+msgid "Invalid attribute: %s"
+msgstr "Atributo inválido: %s"
+
+#: accounts/models.py:125
+msgid "Facebook"
+msgstr "Conectar com Facebook"
+
+#: accounts/models.py:126
+msgid "Instagram"
+msgstr "Instagram"
+
+#: accounts/models.py:127
+msgid "Snapchat"
+msgstr "Snapchat"
+
+#: accounts/models.py:128
+msgid "Celular/Whatsapp"
 msgstr ""
 
-#: templates/account/signup.html:168 templates/account/signup.html.py:304
-#: templates/ifs/signup-completion.html:37
-msgid "E-mail"
+#: accounts/models.py:129
+msgid "Twitter"
+msgstr "Twitter"
+
+#: accounts/models.py:131
+msgid "Youtube"
+msgstr "Youtube"
+
+#: accounts/models.py:135
+msgid "social media"
+msgstr "Rede social"
+
+#: accounts/models.py:136
+msgid "nickname"
+msgstr "Usuário na rede"
+
+#: accounts/models.py:156
+msgid "Email address"
+msgstr "Endereço de Email"
+
+#: activities/models.py:26
+msgid "Type"
+msgstr "Tipo"
+
+#: activities/models.py:27
+msgid "Data"
+msgstr "Dado"
+
+#: activities/models.py:28
+msgid "Expected answer"
+msgstr "Resposta esperada"
+
+#: activities/models.py:29 core/models.py:698 core/models.py:709
+#: themes/default/templates/administration/lesson.html:99
+#: themes/default/templates/course.html:502
+#: themes/default/templates/course.html:511
+#: themes/default/templates/lesson.html:107
+msgid "Topic"
+msgstr "Capítulo"
+
+#: activities/models.py:30
+#: themes/default/templates/administration/lesson.html:229
+msgid "Comment"
+msgstr "Comentar"
+
+#: activities/models.py:31
+#: themes/default/templates/administration/lesson.html:236
+msgid "Positive Feedback"
+msgstr "Feedback positivo"
+
+#: activities/models.py:32
+#: themes/default/templates/administration/lesson.html:243
+msgid "Negative Feedback"
+msgstr "Feedback negativo"
+
+#: activities/models.py:33
+msgid "Image"
+msgstr "Imagem"
+
+#: activities/models.py:36 activities/models.py:56
+#: themes/default/templates/administration/lesson.html:120
+msgid "Activity"
+msgstr "Atividade"
+
+#: activities/models.py:37
+msgid "Activities"
+msgstr "Atividades"
+
+#: activities/models.py:57 core/models.py:301 core/models.py:708
+#: core/models.py:795
+msgid "Student"
+msgstr "Estudante"
+
+#: activities/models.py:59
+msgid "Given answer"
+msgstr "Resposta fornecida"
+
+#: activities/models.py:62 forum/models.py:65 forum/models.py:139
+#: themes/default/templates/question.html:95
+msgid "Answer"
+msgstr "Resposta"
+
+#: activities/models.py:63
+msgid "Answers"
+msgstr "Respostas"
+
+#: activities/static/templates/activity_discussion.html:27
+#, fuzzy
+#| msgid "Total hours"
+msgid "next topic"
+msgstr "próximo capítulo"
+
+#: core/forms.py:16 core/models.py:573
+#: themes/default/templates/messages.html:83
+msgid "Subject"
+msgstr "Assunto"
+
+#: core/forms.py:17 core/models.py:109 core/models.py:483 core/models.py:536
+#: core/models.py:629 core/models.py:846
+#: themes/default/templates/_course_authors_inline.html:19
+#: themes/default/templates/_course_authors_inline.html:42
+#: themes/default/templates/_course_professors_modal.html:69
+#: themes/default/templates/administration/courses.html:127
+#: themes/default/templates/administration/stats.html:82
+msgid "Name"
+msgstr "Nome"
+
+#: core/forms.py:18
+#: themes/default/templates/administration/permissions.html:56
+#: themes/default/templates/administration/permissions.html:105
+#: themes/default/templates/administration/users.html:86
+#: themes/default/templates/class_edit.html:161
+#: themes/default/templates/course-evaluations.html:279
+#: themes/default/templates/evaluations.html:208
+#: themes/default/templates/message.html:40
+#: themes/default/templates/messages.html:117
+msgid "Email"
+msgstr "Email"
+
+#: core/forms.py:19 core/models.py:574 themes/default/templates/message.html:5
+#: themes/default/templates/messages.html:91
+msgid "Message"
+msgstr "Mensagem"
+
+#: core/models.py:32 core/models.py:689
+#: themes/default/templates/administration/lesson.html:112
+#: themes/default/templates/course.html:89
+#: themes/default/templates/lesson.html:118
+msgid "Video"
+msgstr "Vídeo"
+
+#: core/models.py:33
+msgid "Videos"
+msgstr "Videos"
+
+#: core/models.py:39
+#, fuzzy, python-brace-format
+#| msgid "Class: {0} | Topic: {1} | id youtube: {2}"
+msgid "Lesson: {0} | Topic: {1} | id youtube: {2}"
+msgstr "Aula: {0} | Capítulo: {1} | id youtube: {2}"
+
+#: core/models.py:47 core/models.py:474
+msgid "Assistant"
+msgstr "Assistente"
+
+#: core/models.py:52 core/models.py:146 core/models.py:302 core/models.py:479
+#: core/models.py:533 core/models.py:576 core/models.py:627 core/models.py:837
+#: forum/models.py:20 themes/default/templates/_admin_header_inline.html:34
+#: themes/default/templates/ifs/signup-completion.html:117
+#: themes/default/templates/ifs/signup-completion.html:119
+msgid "Course"
+msgstr "Curso"
+
+#: core/models.py:54
+msgid "Certification Allowed"
+msgstr "Certificação"
+
+#: core/models.py:57
+msgid "Certification Allowed Even Without Progress"
+msgstr "Habilitar certificação mesmo sem o progresso mínimo requerido?"
+
+#: core/models.py:104 core/models.py:623
+#: themes/default/templates/administration/courses.html:113
+#: themes/default/templates/administration/courses.html:153
+#: themes/default/templates/administration/courses.html:199
+#: themes/default/templates/course.html:328
+#: themes/default/templates/course.html:332
+#: themes/default/templates/course.html:371
+#: themes/default/templates/course.html:381
+#: themes/default/templates/course.html:553
+#: themes/default/templates/course.html:557
+#: themes/default/templates/user-courses.html:254
+#: themes/default/templates/user-courses.html:337
+#: themes/default/templates/user-courses.html:382
+msgid "Draft"
+msgstr "Rascunho"
+
+#: core/models.py:105 core/models.py:624
+#: themes/default/templates/administration/courses.html:112
+#: themes/default/templates/administration/courses.html:154
+#: themes/default/templates/administration/courses.html:198
+#: themes/default/templates/course.html:325
+#: themes/default/templates/course.html:331
+#: themes/default/templates/course.html:372
+#: themes/default/templates/course.html:389
+#: themes/default/templates/course.html:550
+#: themes/default/templates/course.html:556
+#: themes/default/templates/user-courses.html:255
+#: themes/default/templates/user-courses.html:338
+#: themes/default/templates/user-courses.html:381
+msgid "Published"
+msgstr "Público"
+
+#: core/models.py:108 core/models.py:632 forum/models.py:16
+msgid "Slug"
+msgstr "Slug"
+
+#: core/models.py:110
+msgid "Intro video"
+msgstr "Vídeo introdutório"
+
+#: core/models.py:112 themes/default/templates/course.html:282
+msgid "Application"
+msgstr "Aplicação"
+
+#: core/models.py:113
+msgid "Requirement"
+msgstr "Requisitos"
+
+#: core/models.py:114 themes/default/templates/course.html:265
+#: themes/default/templates/course.html:269
+#: themes/default/templates/course.html:600
+#: themes/default/templates/course.html:605
+msgid "Abstract"
+msgstr "Resumo"
+
+#: core/models.py:115
+msgid "Structure"
+msgstr "Estrutura"
+
+#: core/models.py:116 core/models.py:737
+msgid "Workload"
+msgstr "Carga horária"
+
+#: core/models.py:117 core/models.py:871
+msgid "Pronatec"
+msgstr "Pronatec"
+
+#: core/models.py:118 core/models.py:633
+#: themes/default/templates/administration/courses.html:126
+msgid "Status"
+msgstr "Situação"
+
+#: core/models.py:119 core/models.py:634
+#: themes/default/templates/administration/lesson.html:124
+#: themes/default/templates/administration/lesson.html:276
+#: themes/default/templates/course.html:93
+#: themes/default/templates/course.html:110
+msgid "Thumbnail"
+msgstr "Thumbnail"
+
+#: core/models.py:123 themes/default/templates/course.html:97
+#: themes/default/templates/course.html:154
+msgid "Home thumbnail"
+msgstr "Home thumbnail"
+
+#: core/models.py:125 themes/default/templates/course.html:615
+#: themes/default/templates/course.html:618
+msgid "Welcome Email"
+msgstr "E-mail de boas-vindas"
+
+#: core/models.py:126 themes/default/templates/course.html:580
+msgid "Total hours"
+msgstr "Total de horas"
+
+#: core/models.py:127 themes/default/templates/administration/courses.html:125
+#: themes/default/templates/course.html:573
+#: themes/default/templates/course.html:587
+msgid "Start date"
+msgstr "Data de início"
+
+#: core/models.py:130
+msgid "Default Class"
+msgstr "Turma padrão"
+
+#: core/models.py:139
+msgid "groups"
+msgstr "Grupos"
+
+#: core/models.py:141
+msgid ""
+"The Groups that can have access to this forum. If empty, there are no group "
+"restrictions."
+msgstr ""
+"Os grupos que possuem acesso a este fórum. Se estiver vazio, não há "
+"restrições de grupos."
+
+#: core/models.py:147 themes/default/templates/administration/courses.html:96
+#: themes/default/templates/courses.html:31
+#: themes/default/templates/header.html:26
+#: themes/default/templates/header.html:66
+msgid "Courses"
+msgstr "Cursos"
+
+#: core/models.py:304
+msgid "is active?"
+msgstr "Ativo?"
+
+#: core/models.py:341
+#, python-format
+msgid "Welcome to course: %s"
+msgstr "Bem vindo ao curso: %s"
+
+#: core/models.py:473
+msgid "Instructor"
+msgstr "Instrutor"
+
+#: core/models.py:475
+msgid "Professor Coordinator"
+msgstr "Professor Coordenador"
+
+#: core/models.py:478 core/models.py:528 core/models.py:571
+msgid "Professor"
+msgstr "Professor"
+
+#: core/models.py:481 core/models.py:838
+#: themes/default/templates/administration/permissions.html:58
+msgid "Role"
+msgstr "Papel"
+
+#: core/models.py:488
+msgid "Course Professor"
+msgstr "Professor do curso"
+
+#: core/models.py:489
+msgid "Course Professors"
+msgstr "Professores do curso"
+
+#: core/models.py:541
+msgid "Course Author"
+msgstr "Estrutura"
+
+#: core/models.py:542
+msgid "Course Authors"
+msgstr "Relatórios de curso"
+
+#: core/models.py:575
+msgid "Date"
+msgstr "Data"
+
+#: core/models.py:628
+msgid "Description"
+msgstr "Descrição"
+
+#: core/models.py:630 themes/default/templates/notes.html:51
+msgid "Notes"
+msgstr "Anotações"
+
+#: core/models.py:647 core/models.py:688 forum/models.py:21
+msgid "Lesson"
+msgstr "Aula"
+
+#: core/models.py:648 themes/default/templates/administration/stats.html:101
+#: themes/default/templates/course.html:349
+#: themes/default/templates/course.html:464
+msgid "Lessons"
+msgstr "Aulas"
+
+#: core/models.py:687 forum/models.py:14
+msgid "Title"
+msgstr "Título"
+
+#: core/models.py:690
+msgid "Content"
+msgstr "Conteúdo"
+
+#: core/models.py:691
+msgid "Side notes"
+msgstr "Anotações"
+
+#: core/models.py:699
+msgid "Topics"
+msgstr "Capítulos"
+
+#: core/models.py:716
+msgid "Student Progress"
+msgstr "Progresso do Estudante"
+
+#: core/models.py:725
+msgid "Receipt"
+msgstr "Comprovante"
+
+#: core/models.py:726 core/models.py:765 core/models.py:799
+#: themes/default/templates/class_edit.html:183
+msgid "Certificate"
+msgstr "Certificado"
+
+#: core/models.py:729
+msgid "Certificate Type"
+msgstr "Tipo de Certificação"
+
+#: core/models.py:731
+msgid "Enrollment"
+msgstr "Envolvimento"
+
+#: core/models.py:732 core/models.py:801
+msgid "Created"
+msgstr "Criado"
+
+#: core/models.py:733
+msgid "Last modified"
+msgstr "Última alteração"
+
+#: core/models.py:735
+msgid "Certificate is valid"
+msgstr "Certificado é valido"
+
+#: core/models.py:738
+#| msgid "Total hours"
+msgid "Total topics"
+msgstr "Total de capítulos"
+
+#: core/models.py:740
+msgid "Hash"
+msgstr "Código"
+
+#: core/models.py:775
+msgid "Evaluation grade needed"
+msgstr "Nota mínima"
+
+#: core/models.py:776
+msgid "Evaluation date"
+msgstr "Data da avaliação"
+
+#: core/models.py:777
+msgid "Evaluation results date"
+msgstr "Data da divulgação do resultado da avaliação"
+
+#: core/models.py:779 core/models.py:800
+msgid "Comments"
+msgstr "Comentários"
+
+#: core/models.py:780 core/models.py:811
+#: themes/default/templates/_course-details-inline.html:15
+#: themes/default/templates/course-evaluations.html:59
+#: themes/default/templates/course-evaluations.html:432
+#: themes/default/templates/evaluations.html:357
+#: themes/default/templates/ifs/signup-completion.html:127
+#: themes/default/templates/ifs/signup-completion.html:129
+msgid "Class"
+msgstr "Turma"
+
+#: core/models.py:783 core/models.py:807
+#: themes/default/templates/course-evaluations.html:238
+#: themes/default/templates/course-evaluations.html:256
+#: themes/default/templates/evaluations.html:167
+#: themes/default/templates/evaluations.html:185
+msgid "Evaluation"
+msgstr "Avaliação"
+
+#: core/models.py:803
+msgid "Evaluation grade"
+msgstr "Nota da avaliação"
+
+#: core/models.py:804
+msgid "Approved"
+msgstr "Aprovado"
+
+#: core/models.py:805
+msgid "No show"
+msgstr "Não compareceu"
+
+#: core/models.py:825
+msgid "Certification Process"
+msgstr "Processo de Certificação"
+
+#: core/models.py:839
+msgid "Signature Name"
+msgstr "Nome de Assinatura"
+
+#: core/models.py:842 core/models.py:844
+msgid "Logo"
+msgstr "Logo"
+
+#: core/models.py:849
+msgid "Certificate Template"
+msgstr "Model de Certificado"
+
+#: core/models.py:872
+msgid "MEC"
+msgstr "MEC"
+
+#: core/models.py:875
+msgid "IF Certificate Template"
+msgstr "Modelo de certificação dos IFs"
+
+#: course_material/models.py:8
+msgid "Course Materials"
+msgstr "Material didático"
+
+#: course_material/models.py:9 forum/models.py:15 forum/models.py:64
+#: forum/models.py:132 forum/models.py:149 forum/models.py:154
+msgid "Question"
+msgstr "Descrição"
+
+#: course_material/models.py:33
+#: themes/default/templates/administration/course-material-admin.html:91
+#: themes/default/templates/course-material.html:36
+msgid "Files"
+msgstr "Arquivos"
+
+#: docs/_templates/layout.html:47
+msgid "About these documents"
+msgstr "Sobre estes documentos"
+
+#: docs/_templates/layout.html:51
+msgid "Index"
+msgstr "Índice"
+
+#: docs/_templates/layout.html:55 docs/_templates/search.html:11
+msgid "Search"
+msgstr "Pesquisar usuário"
+
+#: docs/_templates/layout.html:58
+msgid "Copyright"
 msgstr ""
 
-#: templates/account/signup.html:170
-msgid "Your e-mail"
-msgstr ""
+#: docs/_templates/search.html:33
+msgid "Search Results"
+msgstr "Pesquisar nos resultados"
 
-#: templates/account/signup.html:180 templates/account/signup.html.py:316
-#: templates/ifs/signup-completion.html:49
-msgid "Really strong password"
-msgstr ""
+#: docs/_templates/search.html:35
+msgid ""
+"Sua busca não encontrou nenhum documento. Tenha certeza de que todas as "
+"palavras inseridas estejam corretas e que você selecionou as categorias "
+"necessárias."
+msgstr "Copyright"
 
-#: templates/account/signup.html:181 templates/account/signup.html.py:317
-#: templates/ifs/signup-completion.html:50
-msgid "Password confirmation"
-msgstr ""
+#: forum/models.py:17 forum/models.py:23 forum/models.py:66 forum/models.py:69
+#: forum/models.py:125 forum/models.py:148 forum/models.py:153
+#: notes/models.py:11 themes/default/templates/_course-details-inline.html:13
+msgid "User"
+msgstr "Usuário"
 
-#: templates/account/signup.html:194 templates/account/signup.html.py:329
+#: forum/models.py:18
+msgid "Correct answer"
+msgstr "Resposta esperada"
+
+#: forum/models.py:22 forum/models.py:68
+msgid "Hidden"
+msgstr "Oculto"
+
+#: forum/models.py:24
+msgid "Justification"
+msgstr "Publicação"
+
+#: forum/models.py:106
+msgid "A question that you follow has new answers"
+msgstr "Uma questão que você segue possui novas respostas"
+
+#: forum/models.py:107
 #, python-format
 msgid ""
-"I agree to the <a href=\"%(terms_url)s\" target=\"_blank\">Terms of Use</a>"
+"The question '%s' has a new answer. Please access the link below to see "
+"this."
 msgstr ""
+"A questão '%s' possui uma nova resposta. Por favor, acesse o link abaixo "
+"para verificar."
 
-#: templates/account/signup.html:344
-msgid "Facebook connect"
+#: notes/models.py:10
+msgid "Note"
+msgstr "Anotação"
+
+#: themes/default/templates/403.html:4 themes/default/templates/403.html:14
+msgid "An error ocurred or you don't have to see this page."
 msgstr ""
+"Um erro ocorreu ou você não tem permissão para visualizar esta página."
 
-#: templates/administration/courses.html:11 templates/courses.html:43
-#: templates/courses.html.py:50
-msgid "Courses"
+#: themes/default/templates/403.html:28
+msgid ""
+"There's been an error. Probably you don't have permission to see this page."
 msgstr ""
+"Houve um erro. Provavelmente você não possui permissão de acesso a esta "
+"página. "
 
-#: templates/administration/users.html:11
-msgid "Users"
-msgstr ""
+#: themes/default/templates/403.html:29
+msgid "To see this, please do a login as an administrator."
+msgstr "Para acessar você deve estar logado como administrador."
 
-#: templates/courses.html:65
-msgid "Soon"
-msgstr ""
+#: themes/default/templates/404.html:4 themes/default/templates/404.html:14
+msgid "Page not found"
+msgstr "Página não encontrada"
 
-#: templates/courses.html:86
-msgid "Go to course"
-msgstr ""
+#: themes/default/templates/404.html:27
+msgid "We're sorry, but the requested page could not be found."
+msgstr "Desculpe-nos, mas a página requisitada não pode ser encontrada."
 
-#: templates/courses.html:90
-msgid "More information"
-msgstr ""
+#: themes/default/templates/404.html:28
+msgid "Please contact the administrador"
+msgstr "Por favor, entre em contato com o administrador"
 
-#: templates/ifs/signup-completion.html:10
-msgid "Please verify and complete you account information"
-msgstr ""
+#: themes/default/templates/_admin_header_inline.html:10
+msgid "Course name"
+msgstr "Nome do curso"
 
-#: templates/ifs/signup-completion.html:14
-msgid "Full Name"
-msgstr ""
+#: themes/default/templates/_admin_header_inline.html:39
+#: themes/default/templates/_course-header-inline.html:19
+#: themes/default/templates/_forum_inline.html:31
+#: themes/default/templates/forum.html:41
+#: themes/default/templates/question-create.html:33
+#: themes/default/templates/question.html:50
+msgid "Forum"
+msgstr "Fórum"
 
-#: templates/ifs/signup-completion.html:59
-msgid "City"
-msgstr ""
+#: themes/default/templates/_admin_header_inline.html:44
+msgid "Material"
+msgstr "Material"
 
-#: templates/ifs/signup-completion.html:69
-msgid "Campus"
-msgstr ""
+#: themes/default/templates/_admin_header_inline.html:49
+#: themes/default/templates/_course-header-inline.html:24
+msgid "Tools"
+msgstr "Ferramentas"
 
-#: templates/ifs/signup-completion.html:107
-#: templates/ifs/signup-completion.html:109
-msgid "Academic Identifier"
-msgstr ""
+#: themes/default/templates/_admin_header_inline.html:54
+#: themes/default/templates/_course-header-inline.html:26
+#: themes/default/templates/header.html:31
+#: themes/default/templates/messages.html:63
+msgid "Messages"
+msgstr "Mensagens"
 
-#: templates/ifs/signup-completion.html:117
-#: templates/ifs/signup-completion.html:119
-msgid "Course"
-msgstr ""
+#: themes/default/templates/_admin_header_inline.html:57
+#: themes/default/templates/_course-header-inline.html:27
+msgid "Reports"
+msgstr "Relatórios"
 
-#: templates/ifs/signup-completion.html:127
-#: templates/ifs/signup-completion.html:129
-msgid "Class"
-msgstr ""
+#: themes/default/templates/_admin_header_inline.html:60
+#: themes/default/templates/administration/permissions.html:46
+msgid "Permissions"
+msgstr "Permissões"
 
-#: templates/ifs/signup-completion.html:139
+#: themes/default/templates/_admin_header_inline.html:64
+msgid "Certificate settings"
+msgstr "Opções do certificado"
+
+#: themes/default/templates/_class-professors-inline.html:10
+#: themes/default/templates/_course-details-inline.html:11
+#: themes/default/templates/administration/permissions.html:69
+#: themes/default/templates/class_edit.html:92
+#: themes/default/templates/classes.html:65
+#: themes/default/templates/course-evaluations.html:431
+#: themes/default/templates/evaluations.html:356
+msgid "Assistant Professor"
+msgstr "Professor Assistente"
+
+#: themes/default/templates/_course-details-inline.html:5
+msgid "By"
+msgstr "Por"
+
+#: themes/default/templates/_course-header-inline.html:17
+msgid "Intro"
+msgstr "Vídeo introdutório"
+
+#: themes/default/templates/_course-header-inline.html:18
+#: themes/default/templates/home.html:124
+#: themes/default/templates/notes.html:57
+msgid "Resume course"
+msgstr "Continuar curso"
+
+#: themes/default/templates/_course-header-inline.html:20
+msgid "Course material"
+msgstr "Material didático"
+
+#: themes/default/templates/_course-header-inline.html:21
+msgid "Course notes"
+msgstr "Anotações do Curso"
+
+#: themes/default/templates/_course-header-inline.html:28
+#: themes/default/templates/classes.html:55
+msgid "Classes"
+msgstr "Turmas"
+
+#: themes/default/templates/_course-header-inline.html:30
+msgid "Edit course"
+msgstr "Editar curso"
+
+#: themes/default/templates/_course-header-inline.html:31
+#: themes/default/templates/course-evaluations.html:48
+msgid "Evaluations"
+msgstr "Avaliações"
+
+#: themes/default/templates/_course-header-inline.html:36
+msgid "Do you really want to disenroll from this course?"
+msgstr "Deseja realmente se desmatricular deste curso?"
+
+#: themes/default/templates/_course-header-inline.html:37
+msgid "Go out course"
+msgstr "Desmatricular-se do curso"
+
+#: themes/default/templates/_course_authors_inline.html:8
+#: themes/default/templates/_course_authors_inline.html:59
+msgid "Instructors"
+msgstr "Instrutores"
+
+#: themes/default/templates/_course_authors_inline.html:11
+msgid "Organize Instructors"
+msgstr "Organizar instrutores"
+
+#: themes/default/templates/_course_authors_inline.html:27
+#: themes/default/templates/_create_class_modal.html:4
+#: themes/default/templates/_edit_answer_modal.html:33
+#: themes/default/templates/_edit_question_modal.html:36
+#: themes/default/templates/_forum_inline.html:199
+#: themes/default/templates/_modal_course_complete.html:74
+#: themes/default/templates/administration/courses.html:28
+#: themes/default/templates/course-evaluations.html:309
+#: themes/default/templates/course-evaluations.html:365
+#: themes/default/templates/course-evaluations.html:375
+#: themes/default/templates/course-evaluations.html:420
+#: themes/default/templates/evaluations.html:235
+#: themes/default/templates/evaluations.html:291
+#: themes/default/templates/evaluations.html:301
+#: themes/default/templates/evaluations.html:345
+#: themes/default/templates/footer.html:23
+#: themes/default/templates/footer.html:51
+#: themes/default/templates/messages.html:133
+msgid "Close"
+msgstr "Fechar"
+
+#: themes/default/templates/_course_authors_inline.html:28
+#: themes/default/templates/_course_professors_modal.html:86
+#: themes/default/templates/_edit_answer_modal.html:34
+#: themes/default/templates/_edit_question_modal.html:37
+#: themes/default/templates/account/password_reset_from_key.html:31
+#: themes/default/templates/account/password_reset_from_key.html:69
+#: themes/default/templates/administration/certificate-settings.html:51
+#: themes/default/templates/administration/lesson.html:55
+#: themes/default/templates/administration/permissions.html:33
+#: themes/default/templates/class_edit.html:68
+#: themes/default/templates/course.html:49
+#: themes/default/templates/course.html:403
+#: themes/default/templates/home.html:45
+#: themes/default/templates/ifs/signup-completion.html:139
+#: themes/default/templates/profile-edit.html:232
 msgid "Save"
+msgstr "Salvar"
+
+#: themes/default/templates/_course_authors_inline.html:53
+msgid "Add instructor"
+msgstr "Adicionar instrutor"
+
+#: themes/default/templates/_course_professors_modal.html:8
+msgid "Adicionar novo Instrutor"
+msgstr "Adicionar novo Instrutor"
+
+#: themes/default/templates/_course_professors_modal.html:14
+msgid "Yes"
+msgstr "Sim"
+
+#: themes/default/templates/_course_professors_modal.html:15
+msgid "No"
+msgstr "Não"
+
+#: themes/default/templates/_course_professors_modal.html:22
+msgid "Search and select a user to set as course professor"
+msgstr "Busque e selecione um usuário para defini-lo como professor do curso"
+
+#: themes/default/templates/_course_professors_modal.html:25
+#: themes/default/templates/administration/permissions.html:94
+#: themes/default/templates/class_edit.html:136
+#: themes/default/templates/messages.html:106
+msgid "Type the name, email or user name of the professor to search..."
+msgstr ""
+"Digite um nome, email ou nome de usuário do professor para pesquisar..."
+
+#: themes/default/templates/_course_professors_modal.html:35
+msgid "Selected user"
+msgstr "Usuário selecionado"
+
+#: themes/default/templates/_course_professors_modal.html:49
+#: themes/default/templates/profile-edit.html:89
+msgid "Upload avatar"
+msgstr "Enviar foto"
+
+#: themes/default/templates/_course_professors_modal.html:66
+msgid "Use picture from user profile"
+msgstr "Usar imagem do perfil do usuário"
+
+#: themes/default/templates/_course_professors_modal.html:73
+msgid "Use name from  user profile"
+msgstr "Usar nome do perfil do usuário"
+
+#: themes/default/templates/_course_professors_modal.html:79
+msgid "Use biography from user profile"
+msgstr "Usar biografia do perfil do usuário"
+
+#: themes/default/templates/_course_professors_modal.html:85
+#: themes/default/templates/_create_class_modal.html:18
+#: themes/default/templates/administration/certificate-settings.html:50
+#: themes/default/templates/administration/courses.html:40
+#: themes/default/templates/administration/courses.html:70
+#: themes/default/templates/administration/lesson.html:165
+#: themes/default/templates/administration/lesson.html:285
+#: themes/default/templates/administration/permissions.html:32
+#: themes/default/templates/course.html:119
+#: themes/default/templates/course.html:163
+#: themes/default/templates/course.html:227
+#: themes/default/templates/course.html:402
+#: themes/default/templates/home.html:44
+#: themes/default/templates/home.html:287
+#: themes/default/templates/modal-profile-create-social.html:23
+#: themes/default/templates/modal-profile-delete-social.html:14
+msgid "Cancel"
+msgstr "Cancelar"
+
+#: themes/default/templates/_create_class_modal.html:5
+#: themes/default/templates/_create_class_modal.html:13
+#: themes/default/templates/_create_class_modal.html:14
+msgid "New class name"
+msgstr "Nome da nova turma"
+
+#: themes/default/templates/_create_class_modal.html:19
+#: themes/default/templates/classes.html:58
+msgid "Add class"
+msgstr "Adicionar turma"
+
+#: themes/default/templates/_edit_answer_modal.html:6
+msgid "Edit anwser"
+msgstr "Editar resposta"
+
+#: themes/default/templates/_edit_answer_modal.html:27
+#: themes/default/templates/_edit_question_modal.html:30
+#: themes/default/templates/_forum_inline.html:63
+#: themes/default/templates/_forum_inline.html:200
+#: themes/default/templates/accept-terms.html:27
+#: themes/default/templates/account/password_reset.html:33
+#: themes/default/templates/account/password_reset.html:68
+#: themes/default/templates/course-evaluations.html:310
+#: themes/default/templates/course-evaluations.html:367
+#: themes/default/templates/course-evaluations.html:377
+#: themes/default/templates/course-evaluations.html:422
+#: themes/default/templates/evaluations.html:236
+#: themes/default/templates/evaluations.html:293
+#: themes/default/templates/evaluations.html:303
+#: themes/default/templates/evaluations.html:347
+#: themes/default/templates/footer.html:44
+#: themes/default/templates/messages.html:134
+#: themes/default/templates/question.html:145
+msgid "Send"
+msgstr "Enviar"
+
+#: themes/default/templates/_edit_question_modal.html:6
+msgid "Edit question/anwser"
+msgstr "Editar pergunta/resposta"
+
+#: themes/default/templates/_evaluation_details_modal.html:6
+msgid "Detalhes da avaliação"
 msgstr ""
 
-#: templates/notes.html:7
-msgid "My Notes"
+#: themes/default/templates/_evaluation_details_modal.html:16
+#: themes/default/templates/course-evaluations.html:470
+#: themes/default/templates/evaluations.html:395
+msgid "Exam date"
+msgstr "Data da avaliação"
+
+#: themes/default/templates/_evaluation_details_modal.html:24
+#: themes/default/templates/course-evaluations.html:486
+#: themes/default/templates/evaluations.html:411
+msgid "Exam results date"
+msgstr "Data do resultado do exame"
+
+#: themes/default/templates/_evaluation_details_modal.html:34
+msgid "Your grade"
+msgstr "Sua nota"
+
+#: themes/default/templates/_evaluation_details_modal.html:42
+#: themes/default/templates/course-evaluations.html:463
+#: themes/default/templates/evaluations.html:388
+msgid "Exam needed grade"
+msgstr "Nota Mínima"
+
+#: themes/default/templates/_evaluation_details_modal.html:51
+#: themes/default/templates/course-evaluations.html:358
+#: themes/default/templates/evaluations.html:284
+msgid "Instructions"
+msgstr "Instruções"
+
+#: themes/default/templates/_forum_inline.html:39
+#: themes/default/templates/question-create.html:49
+msgid "Fill the question title."
+msgstr "Preencha o título da questão."
+
+#: themes/default/templates/_forum_inline.html:40
+msgid "Fill the question content."
+msgstr "Preencha o texto da questão."
+
+#: themes/default/templates/_forum_inline.html:44
+msgid "What is your question?"
+msgstr "Qual é a sua pergunta?"
+
+#: themes/default/templates/_forum_inline.html:50
+msgid "Description of your question"
+msgstr "Descrição da sua pergunta"
+
+#: themes/default/templates/_forum_inline.html:60
+msgid "Questions & Answers policy"
+msgstr "Política de Perguntas e Respostas"
+
+#: themes/default/templates/_forum_inline.html:78
+#: themes/default/templates/administration/stats.html:59
+msgid "Filter classes"
+msgstr "Filtrar por turma"
+
+#: themes/default/templates/_forum_inline.html:80
+msgid "List by"
+msgstr "Listar por"
+
+#: themes/default/templates/_forum_inline.html:81
+msgid "My classes"
+msgstr "Minhas turmas"
+
+#: themes/default/templates/_forum_inline.html:82
+msgid "All classes"
+msgstr "Todas as turmas"
+
+#: themes/default/templates/_forum_inline.html:83
+msgid "Classes of others professors"
+msgstr "Turmas dos outros professores"
+
+#: themes/default/templates/_forum_inline.html:85
+msgid "Or choose a class"
+msgstr "Ou escolha uma turma"
+
+#: themes/default/templates/_forum_inline.html:96
+msgid "Search in questions"
+msgstr "Busca"
+
+#: themes/default/templates/_forum_inline.html:106
+msgid "There is no question in this forum yet"
+msgstr "Não existem perguntas nesse forum ainda"
+
+#: themes/default/templates/_forum_inline.html:121
+msgid "Most recent"
+msgstr "Mais recentes"
+
+#: themes/default/templates/_forum_inline.html:122
+msgid "Most liked"
+msgstr "Mais curtidas"
+
+#: themes/default/templates/_forum_inline.html:123
+msgid "Most answerd"
+msgstr "Mais respondidas"
+
+#: themes/default/templates/_forum_inline.html:124
+msgid "Most viewed"
+msgstr "Mais vistas"
+
+#: themes/default/templates/_forum_inline.html:140
+msgid "Loading questions"
+msgstr "Carregando perguntas"
+
+#: themes/default/templates/_forum_inline.html:148
+msgid "views"
+msgstr "visualizações"
+
+#: themes/default/templates/_forum_inline.html:149
+msgid "answers"
+msgstr "respostas"
+
+#: themes/default/templates/_forum_inline.html:152
+#: themes/default/templates/question.html:111
+msgid "Hide"
+msgstr "Ocultar"
+
+#: themes/default/templates/_forum_inline.html:159
+msgid "Asked"
+msgstr "Pergunta feita em"
+
+#: themes/default/templates/_forum_inline.html:159
+#: themes/default/templates/user-courses.html:153
+msgid "by"
+msgstr "por"
+
+#: themes/default/templates/_forum_inline.html:164
+msgid "Know why your question was hidden"
+msgstr "Veja porque sua pergunta foi ocultada"
+
+#: themes/default/templates/_forum_inline.html:190
+msgid "Why my question was hidden?"
+msgstr "Porque minha pergunta foi ocultada?"
+
+#: themes/default/templates/_go-to-course-button-inline.html:19
+#: themes/default/templates/_go-to-course-button-inline.html:20
+#: themes/default/templates/user-courses.html:128
+#, python-format
+msgid " This course starts on %(start_date)s and you are already subscribed"
+msgstr "Este curso começa em %(start_date)s e você já está inscrito"
+
+#: themes/default/templates/_go-to-course-button-inline.html:21
+#: themes/default/templates/_go-to-course-button-inline.html:25
+#: themes/default/templates/courses.html:85
+#: themes/default/templates/home.html:126
+msgid "Go to course"
+msgstr "Ir para o curso"
+
+#: themes/default/templates/_go-to-course-button-inline.html:27
+msgid "Subscribe"
+msgstr "Inscrever-se"
+
+#: themes/default/templates/_login_modal.html:14
+#: themes/default/templates/_login_modal.html:17
+#: themes/default/templates/account/email_confirmed.html:14
+#: themes/default/templates/account/login.html:20
+#: themes/default/templates/account/login.html:23
+#: themes/default/templates/account/login.html:88
+#: themes/default/templates/account/login.html:91
+#: themes/default/templates/account/login_modal.html:24
+#: themes/default/templates/account/login_modal.html:27
+#: themes/default/templates/account/login_modal.html:74
+#: themes/default/templates/account/password_reset_from_key_done.html:21
+#: themes/default/templates/account/password_reset_from_key_done.html:24
+#: themes/default/templates/account/password_reset_from_key_done.html:71
+#: themes/default/templates/account/password_reset_from_key_done.html:74
+msgid "E-mail or login"
+msgstr "Email ou login"
+
+#: themes/default/templates/_login_modal.html:39
+#: themes/default/templates/account/email_confirmed.html:26
+#: themes/default/templates/account/login.html:44
+#: themes/default/templates/account/login.html:115
+#: themes/default/templates/account/login_modal.html:48
+#: themes/default/templates/account/password_reset.html:12
+#: themes/default/templates/account/password_reset.html:48
+#: themes/default/templates/account/password_reset_from_key_done.html:39
+msgid "Forgot my password"
+msgstr "Esqueci minha senha"
+
+#: themes/default/templates/_login_modal.html:42
+#: themes/default/templates/account/email_confirmed.html:27
+#: themes/default/templates/account/login.html:8
+#: themes/default/templates/account/login.html:45
+#: themes/default/templates/account/login.html:75
+#: themes/default/templates/account/login.html:112
+#: themes/default/templates/account/login_modal.html:18
+#: themes/default/templates/account/login_modal.html:51
+#: themes/default/templates/account/password_reset_from_key_done.html:40
+#: themes/default/templates/account/password_reset_from_key_done.html:89
+#: themes/default/templates/header.html:92
+msgid "Sign In"
+msgstr "Entrar"
+
+#: themes/default/templates/_login_modal.html:48
+#: themes/default/templates/_signup_modal.html:46
+msgid "Connect with Facebook"
+msgstr "Conectar ao Facebook"
+
+#: themes/default/templates/_modal_course_complete.html:6
+msgid "Course Complete"
+msgstr "Curso concluído!"
+
+#: themes/default/templates/_modal_course_complete.html:27
+msgid "Clique aqui para editá-lo"
 msgstr ""
 
-#: templates/profile-edit.html:7 templates/profile.html:7
+#: themes/default/templates/_signup_modal.html:9
+#: themes/default/templates/account/login_modal.html:76
+msgid "Choose an username"
+msgstr "Escolha um nome de usuário"
+
+#: themes/default/templates/_signup_modal.html:14
+#: themes/default/templates/account/login_modal.html:80
+#: themes/default/templates/account/signup.html:30
+#: themes/default/templates/account/signup.html:109
+#: themes/default/templates/ifs/signup-completion.html:37
+#: themes/default/templates/profile-edit.html:206
+msgid "E-mail"
+msgstr "Email"
+
+#: themes/default/templates/_signup_modal.html:16
+#: themes/default/templates/account/login_modal.html:82
+msgid "Insert your e-mail"
+msgstr "Insira seu email"
+
+#: themes/default/templates/_signup_modal.html:23
+#: themes/default/templates/account/login_modal.html:88
+msgid "A really strong password"
+msgstr "Uma senha muito forte"
+
+#: themes/default/templates/_signup_modal.html:24
+#: themes/default/templates/account/login_modal.html:89
+msgid "Confirm your password"
+msgstr "Confirme sua senha"
+
+#: themes/default/templates/_signup_modal.html:33
+#: themes/default/templates/accept-terms.html:23
+#: themes/default/templates/account/login_modal.html:98
+#: themes/default/templates/account/signup.html:57
+#: themes/default/templates/account/signup.html:135
+#, python-format
+msgid "I agree to the <a href=\"%(terms_url)s\" target=\"_blank\">Terms of Use</a>"
+msgstr ""
+"Eu concordo com os <a href=\"%(terms_url)s\" target=\"_blank\">Termos de "
+"Uso</a>"
+
+#: themes/default/templates/_signup_modal.html:40
+#: themes/default/templates/account/login_modal.html:68
+#: themes/default/templates/account/login_modal.html:106
+#: themes/default/templates/account/signup.html:8
+#: themes/default/templates/account/signup.html:65
+#: themes/default/templates/account/signup.html:92
+#: themes/default/templates/account/signup.html:143
+#: themes/default/templates/header.html:97
+#: themes/default/templates/socialaccount/signup.html:8
+#: themes/default/templates/socialaccount/signup.html:20
+msgid "Sign Up"
+msgstr "Cadastre-se"
+
+#: themes/default/templates/accept-terms.html:5
+msgid "Accept terms and conditions"
+msgstr "Aceitar os termos de uso"
+
+#: themes/default/templates/account/activate.html:8
+#: themes/default/templates/account/activate.html:20
+msgid "Sorry"
+msgstr "Desculpe"
+
+#: themes/default/templates/account/activate.html:10
+#: themes/default/templates/account/activate.html:22
+msgid "You provided an invalid key"
+msgstr "Você forneceu uma chave inválida"
+
+#: themes/default/templates/account/activate.html:10
+#: themes/default/templates/account/activate.html:22
+msgid "The registration failed"
+msgstr "O registro falhou"
+
+#: themes/default/templates/account/email/password_reset_key_message.txt:1
+#, python-format
+msgid ""
+"You're receiving this e-mail because you or someone else has requested a password for your user account at %(site_domain)s.\n"
+"It can be safely ignored if you did not request a password reset. Click the link below to reset your password.\n"
+"\n"
+"%(password_reset_url)s\n"
+"\n"
+"In case you forgot, your username is %(username)s.\n"
+"\n"
+"Thanks for using our site!\n"
+msgstr ""
+"Você está recebendo este e-mail porque você ou alguém solicitou uma redefinição de senha para sua conta no site %(site_domain)s.\n"
+"Você pode seguramente ignorar esta mensagem se você não solicitou esta redefinição de senha. Clique no link abaixo para redefinir sua senha.\n"
+"\n"
+"%(password_reset_url)s\n"
+"\n"
+"Caso você tenha esquecido, seu nome de usuário é %(username)s.\n"
+"\n"
+"Obrigado por usar o TIM Tec!\n"
+
+#: themes/default/templates/account/email/password_reset_key_subject.txt:3
+msgid "Password Reset E-mail"
+msgstr "Email de redefinição de senha"
+
+#: themes/default/templates/account/email_confirm.html:12
+#: themes/default/templates/account/email_confirm.html:31
+#, python-format
+msgid ""
+"Please confirm that <a href=\"mailto:%(email)s\">%(email)s</a> is an e-mail "
+"address for user %(user_display)s."
+msgstr ""
+"Por favor confirme que o endereço <a href=\"mailto:%(email)s\">%(email)s</a>"
+" é o email do usuário %(user_display)s."
+
+#: themes/default/templates/account/email_confirm.html:16
+#: themes/default/templates/account/email_confirm.html:34
+msgid "Confirm"
+msgstr "Confirmar"
+
+#: themes/default/templates/account/email_confirm.html:20
+#: themes/default/templates/account/email_confirm.html:38
+#, python-format
+msgid ""
+"This e-mail confirmation link expired or is invalid.<br/>Please <a "
+"href=\"%(email_url)s\">issue a new e-mail confirmation request</a>."
+msgstr ""
+"Este email de confirmação expirou ou é inválido. Por favor <a "
+"href=\"%(email_url)s\">solicite uma nova confirmação de e-mail</a>."
+
+#: themes/default/templates/account/email_confirmed.html:7
+msgid "Mission accomplished"
+msgstr "Missão cumprida"
+
+#: themes/default/templates/account/email_confirmed.html:8
+msgid "You have an active account"
+msgstr "Você tem uma conta ativa"
+
+#: themes/default/templates/account/email_confirmed.html:12
+msgid "Login"
+msgstr "Entrar"
+
+#: themes/default/templates/account/login_modal.html:10
+msgid "You need to sign in or up to see this content"
+msgstr "Você precisa entrar ou inscrever-se para ver este conteúdo"
+
+#: themes/default/templates/account/login_modal.html:124
+#: themes/default/templates/account/signup.html:150
+msgid "Facebook connect"
+msgstr "Conectar com Facebook"
+
+#: themes/default/templates/account/password_reset.html:23
+#: themes/default/templates/account/password_reset.html:59
+msgid ""
+"Insert your e-mail so we can send you the instructions to recover your "
+"password"
+msgstr ""
+"Insira seu email para que possamos enviar-lhe instruções para recuperar sua "
+"senha"
+
+#: themes/default/templates/account/password_reset.html:26
+#: themes/default/templates/account/password_reset.html:62
+#: themes/default/templates/account/signup.html:32
+msgid "Your e-mail"
+msgstr "Seu email"
+
+#: themes/default/templates/account/password_reset_done.html:10
+#: themes/default/templates/account/password_reset_done.html:20
+#: themes/default/templates/account/verification_sent.html:9
+#: themes/default/templates/account/verification_sent.html:20
+msgid "Check your inbox"
+msgstr "Verifica sua caixa de entrada"
+
+#: themes/default/templates/account/password_reset_done.html:12
+#: themes/default/templates/account/password_reset_done.html:22
+msgid "We sent you an e-mail with the instructions to recover your password"
+msgstr "Nós enviamos um email com instruções para recuperar sua senha"
+
+#: themes/default/templates/account/password_reset_from_key.html:10
+#: themes/default/templates/account/password_reset_from_key.html:48
+msgid "Change your password"
+msgstr "Mudar sua senha"
+
+#: themes/default/templates/account/password_reset_from_key.html:14
+#: themes/default/templates/account/password_reset_from_key.html:54
+#, python-format
+msgid ""
+"The password reset link was invalid, possibly because it has already been "
+"used.  Please request a <a href=\"%(passwd_reset_url)s\">new password "
+"reset</a>."
+msgstr ""
+"O link de solicitação de redefinição de senha é inválido, possivelmente "
+"porque já foi usado. Por favor solicite uma <a "
+"href=\"%(passwd_reset_url)s\">nova redefinição de senha</a>."
+
+#: themes/default/templates/account/password_reset_from_key.html:35
+#: themes/default/templates/account/password_reset_from_key.html:73
+msgid "Your password is now changed."
+msgstr "Sua senha foi alterada."
+
+#: themes/default/templates/account/password_reset_from_key_done.html:10
+#: themes/default/templates/account/password_reset_from_key_done.html:67
+msgid "Password reset complete"
+msgstr "Redefinição da senha completo"
+
+#: themes/default/templates/account/signup.html:42
+#: themes/default/templates/account/signup.html:121
+#: themes/default/templates/ifs/signup-completion.html:49
+msgid "Really strong password"
+msgstr "Senha realmente forte"
+
+#: themes/default/templates/account/signup.html:43
+#: themes/default/templates/account/signup.html:122
+#: themes/default/templates/ifs/signup-completion.html:50
+msgid "Password confirmation"
+msgstr "Confirmação de senha"
+
+#: themes/default/templates/account/verification_sent.html:8
+#: themes/default/templates/account/verification_sent.html:19
+msgid "Validation email sent"
+msgstr "Email de validação enviado"
+
+#: themes/default/templates/administration/certificate-settings.html:65
+msgid "Certificate Settings"
+msgstr "Opções do certificado"
+
+#: themes/default/templates/administration/certificate-settings.html:74
+msgid "Edit certificate"
+msgstr "Editar certificado"
+
+#: themes/default/templates/administration/certificate-settings.html:75
+msgid "Edit receipt text"
+msgstr "Editar texto do comprovante"
+
+#: themes/default/templates/administration/course-material-admin.html:58
+#: themes/default/templates/administration/course-material-admin.html:71
+#: themes/default/templates/course-material.html:23
+msgid "Course Material"
+msgstr "Material didático"
+
+#: themes/default/templates/administration/course-material-admin.html:82
+msgid "Drop"
+msgstr "Solte"
+
+#: themes/default/templates/administration/course-material-admin.html:82
+msgid "files to upload"
+msgstr "arquivos para upload"
+
+#: themes/default/templates/administration/course-material-admin.html:82
+msgid "(or click)"
+msgstr "(ou clique)"
+
+#: themes/default/templates/administration/course-material-admin.html:89
+msgid "No files in course material"
+msgstr "Nenhum arquivo no material didático"
+
+#: themes/default/templates/administration/courses.html:29
+#: themes/default/templates/administration/courses.html:35
+#: themes/default/templates/administration/courses.html:36
+msgid "New course name"
+msgstr "Nome do novo curso"
+
+#: themes/default/templates/administration/courses.html:41
+#: themes/default/templates/administration/courses.html:82
+msgid "Create course"
+msgstr "Criar curso"
+
+#: themes/default/templates/administration/courses.html:54
+msgid "Choose the course file to import"
+msgstr "Escolha o arquivo de curso para importar"
+
+#: themes/default/templates/administration/courses.html:60
+msgid "Select the course file to import"
+msgstr "Selecione o arquivo do curso para importar"
+
+#: themes/default/templates/administration/courses.html:66
+msgid "Course file to import..."
+msgstr "Arquivo de curso para importar..."
+
+#: themes/default/templates/administration/courses.html:71
+#: themes/default/templates/administration/courses.html:83
+msgid "Import course"
+msgstr "Importar curso"
+
+#: themes/default/templates/administration/courses.html:111
+msgid "All"
+msgstr "Todos"
+
+#: themes/default/templates/administration/courses.html:119
+#: themes/default/templates/administration/stats.html:76
+#: themes/default/templates/administration/users.html:64
+#: themes/default/templates/administration/users.html:66
+msgid "Keyword"
+msgstr "Palavra-chave"
+
+#: themes/default/templates/administration/courses.html:132
+#: themes/default/templates/administration/stats.html:88
+msgid "Invert"
+msgstr "Inverter"
+
+#: themes/default/templates/administration/courses.html:157
+#: themes/default/templates/administration/stats.html:141
+#: themes/default/templates/user-courses.html:341
+msgid "Show lessons"
+msgstr "Mostrar aulas"
+
+#: themes/default/templates/administration/courses.html:158
+#: themes/default/templates/user-courses.html:342
+msgid "Hide lessons"
+msgstr "Ocultar aulas"
+
+#: themes/default/templates/administration/courses.html:168
+#: themes/default/templates/user-courses.html:274
+#: themes/default/templates/user-courses.html:351
+msgid "Started in"
+msgstr "Começou em"
+
+#: themes/default/templates/administration/courses.html:174
+#: themes/default/templates/user-courses.html:280
+#: themes/default/templates/user-courses.html:357
+msgid "Starts in"
+msgstr "Começa em"
+
+#: themes/default/templates/administration/courses.html:180
+#: themes/default/templates/user-courses.html:286
+#: themes/default/templates/user-courses.html:363
+msgid "No start date"
+msgstr "Sem data de início"
+
+#: themes/default/templates/administration/courses.html:188
+#: themes/default/templates/administration/courses.html:191
+#: themes/default/templates/user-courses.html:371
+#: themes/default/templates/user-courses.html:374
+msgid "Loading lessons list"
+msgstr "Carregando lista de aulas"
+
+#: themes/default/templates/administration/courses.html:217
+msgid "No courses found"
+msgstr "Nenhum curso encontrado"
+
+#: themes/default/templates/administration/courses.html:220
+msgid "Loading courses..."
+msgstr "Carregando cursos..."
+
+#: themes/default/templates/administration/lesson.html:54
+#: themes/default/templates/course.html:56
+msgid "Delete"
+msgstr "Apagar"
+
+#: themes/default/templates/administration/lesson.html:56
+msgid "Publish"
+msgstr "Publicar"
+
+#: themes/default/templates/administration/lesson.html:85
+#: themes/default/templates/course.html:365
+#: themes/default/templates/course.html:420
+msgid "Lesson name"
+msgstr "Nome da aula"
+
+#: themes/default/templates/administration/lesson.html:87
+#: themes/default/templates/administration/lesson.html:101
+msgid "Lesson description"
+msgstr "Descrição da aula"
+
+#: themes/default/templates/administration/lesson.html:103
+#| msgid "Delete this unit"
+msgid "Delete this topic"
+msgstr "Apagar este capítulo"
+
+#: themes/default/templates/administration/lesson.html:116
+msgid "Text/Image"
+msgstr "Texto/Imagem"
+
+#: themes/default/templates/administration/lesson.html:158
+#, fuzzy
+msgid "Topic video"
+msgstr "Vídeo do capítulo"
+
+#: themes/default/templates/administration/lesson.html:168
+#: themes/default/templates/administration/lesson.html:288
+#: themes/default/templates/course.html:122
+#: themes/default/templates/course.html:166
+#: themes/default/templates/course.html:231
+#: themes/default/templates/modal-profile-create-social.html:24
+msgid "Add"
+msgstr "Adicionar"
+
+#: themes/default/templates/administration/lesson.html:185
+#: themes/default/templates/course.html:211
+msgid "Change video"
+msgstr "Trocar vídeo"
+
+#: themes/default/templates/administration/lesson.html:202
+msgid "Fill with your content"
+msgstr "Preencha com o conteúdo"
+
+#: themes/default/templates/administration/lesson.html:228
+msgid ""
+"The text bellow will be shown to students when they correctly finish this "
+"activity."
+msgstr ""
+"O texto abaixo é um comentário que será exibido após o estudante responder "
+"corretamente a atividade."
+
+#: themes/default/templates/administration/lesson.html:233
+msgid ""
+"The text bellow will be shown to students when they send a correctly answer "
+"to this activity."
+msgstr ""
+"O texto abaixo é um comentário que será exibido quando o estudante responder"
+" corretamente a atividade."
+
+#: themes/default/templates/administration/lesson.html:234
+#: themes/default/templates/administration/lesson.html:241
+msgid "If you don't fill this field, it will appear a default message."
+msgstr ""
+"Se você não preencher este campo, aparecerá uma mensagem padrão pré-definida"
+" pelo sistema."
+
+#: themes/default/templates/administration/lesson.html:240
+msgid ""
+"The text bellow will be shown to students when they send a wrong answer to "
+"this activity."
+msgstr ""
+"O texto abaixo é um comentário que será exibido quando estudante responder "
+"incorretamente a atividade."
+
+#: themes/default/templates/administration/lesson.html:251
+#| msgid "Unit activity"
+msgid "Topic activity"
+msgstr "Atividade do capítulo"
+
+#: themes/default/templates/administration/lesson.html:302
+#: themes/default/templates/course.html:139
+#: themes/default/templates/course.html:181
+msgid "Change thumbnail"
+msgstr "Trocar thumbnail"
+
+#: themes/default/templates/administration/lesson.html:314
+#: themes/default/templates/administration/lesson.html:315
+#: themes/default/templates/lesson.html:180
+msgid "Additional materials"
+msgstr "Materiais adicionais"
+
+#: themes/default/templates/administration/permissions.html:49
+#: themes/default/templates/administration/permissions.html:87
+msgid "Add user"
+msgstr "Adicionar usuário"
+
+#: themes/default/templates/administration/permissions.html:55
+#: themes/default/templates/administration/permissions.html:104
+#: themes/default/templates/administration/users.html:87
+#: themes/default/templates/class_edit.html:169
+#: themes/default/templates/course-evaluations.html:277
+#: themes/default/templates/course-evaluations.html:383
+#: themes/default/templates/evaluations.html:206
+#: themes/default/templates/evaluations.html:309
+#: themes/default/templates/message.html:39
+#: themes/default/templates/messages.html:116
+msgid "Full name"
+msgstr "Nome"
+
+#: themes/default/templates/administration/permissions.html:59
+#: themes/default/templates/administration/permissions.html:107
+#: themes/default/templates/administration/users.html:90
+#: themes/default/templates/class_edit.html:184
+#: themes/default/templates/classes.html:67
+#: themes/default/templates/course-evaluations.html:280
+#: themes/default/templates/evaluations.html:209
+#: themes/default/templates/messages.html:119
+#: themes/default/templates/profile-edit.html:255
+msgid "Actions"
+msgstr "Ações"
+
+#: themes/default/templates/administration/permissions.html:70
+msgid "Coordinator Professor"
+msgstr "Professor Coordenador"
+
+#: themes/default/templates/administration/permissions.html:91
+msgid "Search user"
+msgstr "Pesquisar usuário"
+
+#: themes/default/templates/administration/permissions.html:122
+msgid "Add users"
+msgstr "Adicionar usuário"
+
+#: themes/default/templates/administration/stats.html:47
+msgid "Course reports"
+msgstr "Relatórios de curso"
+
+#: themes/default/templates/administration/stats.html:83
+msgid "Progress"
+msgstr "Progresso"
+
+#: themes/default/templates/administration/stats.html:100
+#: themes/default/templates/classes.html:66
+msgid "Students"
+msgstr "Estudantes"
+
+#: themes/default/templates/administration/stats.html:114
+msgid "Loading students report"
+msgstr "Carregando relatórios de estudantes"
+
+#: themes/default/templates/administration/stats.html:118
+msgid "Students progress"
+msgstr "Progresso do estudante"
+
+#: themes/default/templates/administration/stats.html:119
+msgid "Total number of students"
+msgstr "Número total de estudantes"
+
+#: themes/default/templates/administration/stats.html:123
+msgid "Search student"
+msgstr "Estudante"
+
+#: themes/default/templates/administration/stats.html:147
+msgid "Loading student report"
+msgstr "Carregando relatório de estudantes"
+
+#: themes/default/templates/administration/stats.html:175
+msgid "Average student progress per class"
+msgstr "Progresso médio dos estudantes por turma"
+
+#: themes/default/templates/administration/stats.html:177
+msgid "Loading lessons report"
+msgstr "Carregando relatórios de aulas"
+
+#: themes/default/templates/administration/users.html:45
+#: themes/default/templates/header.html:67
+msgid "Users"
+msgstr "Usuários"
+
+#: themes/default/templates/administration/users.html:50
+msgid "Users found:"
+msgstr "Usuários encontrados:"
+
+#: themes/default/templates/administration/users.html:56
+msgid "Administrators"
+msgstr "Administradores"
+
+#: themes/default/templates/administration/users.html:59
+msgid "Blockeds"
+msgstr "Bloqueados"
+
+#: themes/default/templates/administration/users.html:70
+msgid "Filter"
+msgstr "Filtro"
+
+#: themes/default/templates/administration/users.html:77
+msgid "Loading users list"
+msgstr "Carregando lista de usuários"
+
+#: themes/default/templates/administration/users.html:80
+msgid "No users found"
+msgstr "Nenhum usuário encontrado"
+
+#: themes/default/templates/administration/users.html:88
+msgid "Administrator"
+msgstr "Administrador"
+
+#: themes/default/templates/administration/users.html:116
+msgid "Previous"
+msgstr "Anterior"
+
+#: themes/default/templates/administration/users.html:117
+msgid "Next"
+msgstr "Proximo"
+
+#: themes/default/templates/administration/users.html:118
+msgid "First"
+msgstr "Primeiro"
+
+#: themes/default/templates/administration/users.html:119
+msgid "Last"
+msgstr "ùltimo"
+
+#: themes/default/templates/certificate.html:60
+#: themes/default/templates/certificate.html:93
+msgid "Baixar Comprovante"
+msgstr ""
+
+#: themes/default/templates/certificate.html:62
+#: themes/default/templates/certificate.html:95
+msgid "Baixar Certificado"
+msgstr ""
+
+#: themes/default/templates/certificate.html:75
+msgid ""
+"Este Atestado não está disponível pois o perfil do usuário não está "
+"preenchido."
+msgstr ""
+
+#: themes/default/templates/class_edit.html:85
+#: themes/default/templates/classes.html:64
+msgid "Class name"
+msgstr "Nome da turma"
+
+#: themes/default/templates/class_edit.html:107
+msgid "Select if this class can emmit certificates."
+msgstr "Selecione à direita se esta turma pode emitir ou não certificados."
+
+#: themes/default/templates/class_edit.html:112
+#: themes/default/templates/class_edit.html:125
+#: themes/default/templates/course-evaluations.html:131
+#: themes/default/templates/evaluations.html:68
+msgid "Allows Certification"
+msgstr "Permite certificação"
+
+#: themes/default/templates/class_edit.html:120
+msgid ""
+"Select if this class can emmit certificates even the student didn't get the "
+"minimum progress required."
+msgstr ""
+"Marque se esta classe pode emitir certificados mesmo que o estudante não "
+"tenha atingido o progresso mínimo requerido."
+
+#: themes/default/templates/class_edit.html:133
+msgid "Add students to this class"
+msgstr "Adicionar estudantes nesta turma"
+
+#: themes/default/templates/class_edit.html:177
+msgid "Start Date"
+msgstr "Data de início"
+
+#: themes/default/templates/class_edit.html:214
+#: themes/default/templates/course-evaluations.html:286
+#: themes/default/templates/evaluations.html:215
+msgid "No students found"
+msgstr "Nenhum aluno encontrado"
+
+#: themes/default/templates/class_edit.html:224
+msgid "If it is a big class, you'll need to wait a little..."
+msgstr "Se for uma classe grande, você terá que aguardar um pouco... "
+
+#: themes/default/templates/course-evaluations.html:60
+msgid "Allows certificate"
+msgstr "Permite certificação"
+
+#: themes/default/templates/course-evaluations.html:61
+msgid "Asked for certificate"
+msgstr "Solicitou certificado"
+
+#: themes/default/templates/course-evaluations.html:62
+msgid "Able to attend evaluation"
+msgstr "Habilitados para serem abaliados"
+
+#: themes/default/templates/course-evaluations.html:63
+#: themes/default/templates/course-evaluations.html:158
+#: themes/default/templates/evaluations.html:95
+msgid "Already have certificate"
+msgstr "Já possui certificado"
+
+#: themes/default/templates/course-evaluations.html:64
+#: themes/default/templates/course-evaluations.html:166
+#: themes/default/templates/evaluations.html:103
+msgid "Scheduled evaluations"
+msgstr "Avaliações agendadas"
+
+#: themes/default/templates/course-evaluations.html:65
+#: themes/default/templates/course-evaluations.html:174
+#: themes/default/templates/evaluations.html:111
+msgid "Upcoming evaluations"
+msgstr "Próximas avaliações"
+
+#: themes/default/templates/course-evaluations.html:66
+#: themes/default/templates/course-evaluations.html:87
+#: themes/default/templates/course-evaluations.html:387
+#: themes/default/templates/evaluations.html:313
+msgid "Manage evaluations"
+msgstr "Editar avaliações"
+
+#: themes/default/templates/course-evaluations.html:103
+#: themes/default/templates/evaluations.html:40
+msgid "Evaluations for class"
+msgstr "Avaliação para turma"
+
+#: themes/default/templates/course-evaluations.html:115
+#: themes/default/templates/course-evaluations.html:223
+#: themes/default/templates/course-evaluations.html:230
+#: themes/default/templates/evaluations.html:52
+#: themes/default/templates/evaluations.html:151
+#: themes/default/templates/evaluations.html:159
+msgid "Schedule evaluation"
+msgstr "Agendar avaliação"
+
+#: themes/default/templates/course-evaluations.html:122
+#: themes/default/templates/evaluations.html:59
+msgid "Selecione à direita se esta turma pode emitir ou não certificados."
+msgstr ""
+
+#: themes/default/templates/course-evaluations.html:139
+#: themes/default/templates/evaluations.html:76
+msgid "Evaluation status"
+msgstr "Situação da avaliação"
+
+#: themes/default/templates/course-evaluations.html:142
+#: themes/default/templates/evaluations.html:79
+msgid "Students that can certificate"
+msgstr "Estudantes habilitados"
+
+#: themes/default/templates/course-evaluations.html:150
+#: themes/default/templates/evaluations.html:87
+msgid "Students that requested certificate"
+msgstr "Estudantes que solicitaram certificaçao"
+
+#: themes/default/templates/course-evaluations.html:184
+#: themes/default/templates/evaluations.html:121
+msgid "Class progress"
+msgstr "Progresso da turma"
+
+#: themes/default/templates/course-evaluations.html:187
+#: themes/default/templates/evaluations.html:124
+msgid "Number of enroled students"
+msgstr "Número de estudantes matriculados"
+
+#: themes/default/templates/course-evaluations.html:195
+#: themes/default/templates/evaluations.html:132
+msgid "Number of students able to attend evaluation:"
+msgstr "Número de estudantes habilitados para serem avaliados"
+
+#: themes/default/templates/course-evaluations.html:201
+#: themes/default/templates/evaluations.html:133
+msgid "out of"
+msgstr "de"
+
+#: themes/default/templates/course-evaluations.html:225
+#: themes/default/templates/evaluations.html:153
+msgid "No evaluation found."
+msgstr "Nenhuma avaliação encontrada"
+
+#: themes/default/templates/course-evaluations.html:226
+#: themes/default/templates/evaluations.html:154
+msgid "Schedule one at"
+msgstr "Agendar em"
+
+#: themes/default/templates/course-evaluations.html:233
+#: themes/default/templates/evaluations.html:162
+msgid "Escolha uma avaliação da lista abaixo:"
+msgstr ""
+
+#: themes/default/templates/course-evaluations.html:252
+msgid "Chose an evaluation through the left aside menu or schedule a new one."
+msgstr "Escolha uma avaliação pelo menu à esquerda ou agende uma nova"
+
+#: themes/default/templates/course-evaluations.html:265
+#: themes/default/templates/evaluations.html:194
+msgid "Edit evaluation"
+msgstr "Editar avaliação"
+
+#: themes/default/templates/course-evaluations.html:269
+#: themes/default/templates/evaluations.html:198
+msgid "Add student"
+msgstr "Adicionar estudante"
+
+#: themes/default/templates/course-evaluations.html:295
+msgid "remove student"
+msgstr "remover estudante"
+
+#: themes/default/templates/course-evaluations.html:313
+#: themes/default/templates/evaluations.html:239
+msgid "Schedule Evaluation"
+msgstr "Agendar Avaliação"
+
+#: themes/default/templates/course-evaluations.html:319
+#: themes/default/templates/evaluations.html:245
+msgid "Evaluation Date"
+msgstr "Data da avaliação"
+
+#: themes/default/templates/course-evaluations.html:335
+#: themes/default/templates/evaluations.html:261
+msgid "Results Date"
+msgstr "Data dos resultados"
+
+#: themes/default/templates/course-evaluations.html:351
+#: themes/default/templates/evaluations.html:277
+msgid "Mininum grade"
+msgstr "Nota mínima"
+
+#: themes/default/templates/course-evaluations.html:373
+#: themes/default/templates/evaluations.html:299
+msgid "Students that can attend"
+msgstr "Estudantes habilitados"
+
+#: themes/default/templates/course-evaluations.html:430
+#: themes/default/templates/evaluations.html:355
+msgid "User name"
+msgstr "Nome de usuário"
+
+#: themes/default/templates/course-evaluations.html:456
+#: themes/default/templates/evaluations.html:381
+msgid "Student exam grade"
+msgstr "Nota do estudante"
+
+#: themes/default/templates/course-notes.html:34
+msgid "Course Notes"
+msgstr "Anotações do Curso"
+
+#: themes/default/templates/course-notes.html:41
+#: themes/default/templates/notes.html:40
+msgid "You have not made any notes yet."
+msgstr "Você não fez nenhuma anotação ainda."
+
+#: themes/default/templates/course.html:50
+msgid "Export course and download"
+msgstr "Exportar curso e fazer download"
+
+#: themes/default/templates/course.html:50
+msgid "Export"
+msgstr "Exportar"
+
+#: themes/default/templates/course.html:56
+msgid "Delete course"
+msgstr "Apagar curso"
+
+#: themes/default/templates/course.html:111
+msgid "min-width"
+msgstr "tam. mínimo"
+
+#: themes/default/templates/course.html:221
+msgid "Introduction video"
+msgstr "Vídeo introdutório"
+
+#: themes/default/templates/course.html:278
+msgid "Why do this course?"
+msgstr "Por que fazer esse curso?"
+
+#: themes/default/templates/course.html:290
+msgid "What do I have to know?"
+msgstr "Quem pode fazer esse curso?"
+
+#: themes/default/templates/course.html:293
+msgid "Requirements"
+msgstr "Requisitos"
+
+#: themes/default/templates/course.html:300
+#: themes/default/templates/course.html:303
+msgid "Estrutura do Curso"
+msgstr "Estrutura do Curso"
+
+#: themes/default/templates/course.html:320
+#: themes/default/templates/course.html:545
+msgid "This course is"
+msgstr "Este curso é"
+
+#: themes/default/templates/course.html:353
+msgid "Organize lesson"
+msgstr "Organizar aulas"
+
+#: themes/default/templates/course.html:385
+msgid "Listed"
+msgstr "Listado"
+
+#: themes/default/templates/course.html:442
+msgid "videos"
+msgstr "videos"
+
+#: themes/default/templates/course.html:443
+msgid "activities"
+msgstr "atividades"
+
+#: themes/default/templates/course.html:444
+msgid "text/image"
+msgstr "Texto/Imagem"
+
+#: themes/default/templates/course.html:455
+msgid "Add lesson"
+msgstr "Adicionar aula"
+
+#: themes/default/templates/course.html:564
+msgid "Progresso necessário para certificado"
+msgstr ""
+
+#: themes/default/templates/course.html:592
+msgid "Total Hours"
+msgstr "Total de Horas"
+
+#: themes/default/templates/courses.html:65
+#: themes/default/templates/home.html:108
+msgid "Soon"
+msgstr "Em breve"
+
+#: themes/default/templates/courses.html:89
+msgid "More information"
+msgstr "Mais informações"
+
+#: themes/default/templates/evaluations.html:181
+msgid ""
+"Chose an evaluation throught the left aside menu or schedule a new one."
+msgstr "Escolha uma avaliação pelo menu à esquerda ou agende uma nova"
+
+#: themes/default/templates/evaluations.html:224
+msgid "Edit student"
+msgstr "Editar estudante"
+
+#: themes/default/templates/flatpages/default.html:57
+msgid "Page not found. Click here to create it."
+msgstr "Página não encontrada. Clique aqui para criá-la."
+
+#: themes/default/templates/footer.html:8
+#: themes/default/templates/footer.html:34
+#: themes/default/templates/header.html:25
+msgid "Contact"
+msgstr "Contato"
+
+#: themes/default/templates/footer.html:10
+msgid "Terms of Use"
+msgstr "Termos de Uso"
+
+#: themes/default/templates/footer.html:43
+msgid "Clear"
+msgstr "Limpar"
+
+#: themes/default/templates/forum.html:45
+#: themes/default/templates/question.html:53
+msgid "Ask a question"
+msgstr "Fazer uma pergunta"
+
+#: themes/default/templates/header.html:10
+msgid "Toggle navigation"
+msgstr "Alternar navegação"
+
+#: themes/default/templates/header.html:24
+msgid "About"
+msgstr "Sobre"
+
+#: themes/default/templates/header.html:61
+#: themes/default/templates/header.html:71
+msgid "Admin"
+msgstr "Administração"
+
+#: themes/default/templates/header.html:65
+msgid "Home edit"
+msgstr "Editar home"
+
+#: themes/default/templates/header.html:76
+msgid "My area"
+msgstr "Minha área"
+
+#: themes/default/templates/header.html:80
 msgid "Profile"
-msgstr ""
+msgstr "Perfil"
 
-#: templates/user-courses.html:7
+#: themes/default/templates/header.html:81
+msgid "Edit Profile and Account Settings"
+msgstr "Editar Perfil e Configurações da Conta"
+
+#: themes/default/templates/header.html:83
+#: themes/default/templates/user-courses.html:30
 msgid "My Courses"
+msgstr "Meus Cursos"
+
+#: themes/default/templates/header.html:84
+#: themes/default/templates/notes.html:32
+#: themes/default/templates/user-courses.html:98
+msgid "My Notes"
+msgstr "Minhas Anotações"
+
+#: themes/default/templates/header.html:86
+msgid "Logout"
+msgstr "Sair"
+
+#: themes/default/templates/home.html:41 themes/default/templates/home.html:67
+msgid "Organize courses"
+msgstr "Organizar cursos"
+
+#: themes/default/templates/home.html:43
+msgid "Choose home courses"
+msgstr "Escolher cursos da home"
+
+#: themes/default/templates/home.html:62
+msgid "Featured courses"
+msgstr "Cursos em destaque"
+
+#: themes/default/templates/home.html:138
+msgid "All courses"
+msgstr "Todos os cursos"
+
+#: themes/default/templates/home.html:268
+msgid "Edit home courses"
+msgstr "Editar cursos da home"
+
+#: themes/default/templates/ifs/signup-completion.html:10
+msgid "Please verify and complete you account information"
+msgstr "Por favor verifique e complete seus dados"
+
+#: themes/default/templates/ifs/signup-completion.html:14
+#: themes/default/templates/profile-edit.html:106
+msgid "Full Name"
+msgstr "Nome"
+
+#: themes/default/templates/ifs/signup-completion.html:69
+msgid "Campus"
+msgstr "Campus"
+
+#: themes/default/templates/ifs/signup-completion.html:107
+#: themes/default/templates/ifs/signup-completion.html:109
+msgid "Academic Identifier"
+msgstr "Matrícula"
+
+#: themes/default/templates/lesson.html:74
+msgid "Chapters"
+msgstr "Capítulos"
+
+#: themes/default/templates/lesson.html:121
+msgid "Text"
+msgstr "Texto"
+
+#: themes/default/templates/lesson.html:137
+msgid "Professor comment"
+msgstr "Anotações do professor"
+
+#: themes/default/templates/lesson.html:143
+msgid "Continue"
+msgstr "Continuar"
+
+#: themes/default/templates/lesson.html:164
+msgid "My Annotations"
+msgstr "Minhas Anotações"
+
+#: themes/default/templates/lesson.html:183
+#| msgid "This unit has no addicional materials"
+msgid "This topic has no additional materials"
+msgstr "Este capítulo não possui material adicional"
+
+#: themes/default/templates/message.html:31
+msgid "Show Recipient List"
+msgstr "Mostrar destinatários"
+
+#: themes/default/templates/message.html:32
+msgid "Hide Recipient List"
+msgstr "Esconder destinatários"
+
+#: themes/default/templates/message.html:36
+msgid "Recipients"
+msgstr "Destinatários"
+
+#: themes/default/templates/messages.html:68
+#: themes/default/templates/messages.html:73
+msgid "New Message"
+msgstr "Nova mensagem"
+
+#: themes/default/templates/messages.html:78
+msgid "Fill the message subject"
+msgstr "Preencha o assunto"
+
+#: themes/default/templates/messages.html:79
+msgid "Fill the message body"
+msgstr "Preencha o corpo do email"
+
+#: themes/default/templates/messages.html:94
+msgid "Loading classes..."
+msgstr "Carregando turmas..."
+
+#: themes/default/templates/messages.html:98
+msgid "Send to all classes"
+msgstr "Enviar para todas as turmas"
+
+#: themes/default/templates/messages.html:182
+#: themes/default/templates/messages.html:184
+msgid "Details"
+msgstr "Detalhes"
+
+#: themes/default/templates/modal-profile-create-social.html:6
+msgid "Add new social media"
+msgstr "Adicionar nova rede social"
+
+#: themes/default/templates/modal-profile-delete-social.html:6
+#: themes/default/templates/modal-profile-delete-social.html:15
+msgid "Remove"
+msgstr "Remover"
+
+#: themes/default/templates/modal-profile-delete-social.html:10
+msgid "Are you sure?"
+msgstr "Você tem certeza?"
+
+#: themes/default/templates/notes.html:71
+msgid "Go to notes"
+msgstr "Ver anotações"
+
+#: themes/default/templates/profile-edit.html:102
+msgid "Profile Info"
+msgstr "Perfil"
+
+#: themes/default/templates/profile-edit.html:177
+msgid "Bio"
+msgstr "Biografia"
+
+#: themes/default/templates/profile-edit.html:191
+msgid "Account Settings"
+msgstr "Configurações da conta"
+
+#: themes/default/templates/profile-edit.html:219
+msgid "New password"
+msgstr "Nova senha"
+
+#: themes/default/templates/profile-edit.html:222
+msgid "Confirm new password"
+msgstr "Confirmar nova senha"
+
+#: themes/default/templates/profile-edit.html:246
+#: themes/default/templates/profile-edit.html:253
+msgid "Social Media"
+msgstr "Rede Social"
+
+#: themes/default/templates/profile-edit.html:254
+msgid "Nickname"
+msgstr "Usuário na rede"
+
+#: themes/default/templates/profile-edit.html:270
+msgid "There are no social medias registered to you."
+msgstr "Não há redes sociais registradas por você."
+
+#: themes/default/templates/profile.html:81
+msgid "Finished courses"
+msgstr "Cursos finalizados"
+
+#: themes/default/templates/profile.html:108
+#: themes/default/templates/user-courses.html:163
+#: themes/default/templates/user-courses.html:213
+msgid "Finished at"
+msgstr "Finalizado em"
+
+#: themes/default/templates/profile.html:115
+#: themes/default/templates/user-courses.html:105
+#: themes/default/templates/user-courses.html:170
+#: themes/default/templates/user-courses.html:220
+msgid "View Receipt"
+msgstr "Ver Comprovante"
+
+#: themes/default/templates/profile.html:118
+#: themes/default/templates/user-courses.html:173
+#: themes/default/templates/user-courses.html:223
+msgid "View Certificate"
+msgstr "Ver certificado"
+
+#: themes/default/templates/profile.html:127
+msgid "Current courses"
+msgstr "Cursos em andamento"
+
+#: themes/default/templates/question-create.html:52
+msgid "Fill the question text."
+msgstr "Preencha o texto da questão."
+
+#: themes/default/templates/question.html:75
+msgid "Follow"
+msgstr "Seguir"
+
+#: themes/default/templates/question.html:78
+msgid "Unfollow"
+msgstr "Deixar de seguir"
+
+#: themes/default/templates/question.html:81
+#: themes/default/templates/question.html:117
+msgid "Edit"
+msgstr "Editar"
+
+#: themes/default/templates/question.html:114
+msgid "Show"
+msgstr "Exibir"
+
+#: themes/default/templates/question.html:126
+msgid "Your answer"
+msgstr "Sua resposta"
+
+#: themes/default/templates/socialaccount/authentication_error.html:5
+#: themes/default/templates/socialaccount/authentication_error.html:13
+msgid "Social Network Login Failure"
+msgstr "Falha ao fazer login na Rede Social"
+
+#: themes/default/templates/socialaccount/authentication_error.html:16
+msgid ""
+"An error occurred while attempting to login via your social network account."
+msgstr "Aconteceu um erro ao tentar autenticar usando sua rede social"
+
+#: themes/default/templates/socialaccount/login_cancelled.html:5
+#: themes/default/templates/socialaccount/login_cancelled.html:13
+msgid "Login Cancelled"
+msgstr "Autenticação cancelada"
+
+#: themes/default/templates/socialaccount/login_cancelled.html:16
+#, python-format
+msgid ""
+"You decided to cancel logging in to our site using one of your existing "
+"accounts. If this was a mistake, please proceed to <a "
+"href=\"%(login_url)s\">sign in</a>."
 msgstr ""
+"Você decidiu cancelar o login no nosso site usando uma conta sua existente. "
+"Se isso foi um engano volte para <a href=\"%(login_url)s\">entrar</a>."
+
+#: themes/default/templates/socialaccount/signup.html:11
+#, python-format
+msgid ""
+"You are about to use your %(provider_name)s account to login to\n"
+"    %(site_name)s. As a final step, please complete the following form:"
+msgstr ""
+"Você está prestes a usar a sua conta no %(provider_name)s para logar no "
+"%(site_name)s. Para concluir, complete o formulário abaixo:"
+
+#: themes/default/templates/user-courses.html:40
+msgid "Courses I'm enrolled"
+msgstr "Cursos que estou fazendo"
+
+#: themes/default/templates/user-courses.html:45
+msgid "My certificates"
+msgstr "Meus certificados"
+
+#: themes/default/templates/user-courses.html:50
+msgid "Courses I assist"
+msgstr "Cursos que sou assistente"
+
+#: themes/default/templates/user-courses.html:53
+msgid "Courses I coordinate"
+msgstr "Cursos que sou coordenador"
+
+#: themes/default/templates/user-courses.html:65
+msgid "You are not enrolled in any course yet."
+msgstr "Você não está fazendo nenhum curso ainda."
+
+#: themes/default/templates/user-courses.html:84
+msgid "Resume Course"
+msgstr "Continuar curso"
+
+#: themes/default/templates/user-courses.html:107
+msgid "View certificate"
+msgstr "Ver certificado"
+
+#: themes/default/templates/user-courses.html:123
+msgid "Go to Course"
+msgstr "Ir para o curso"
+
+#: themes/default/templates/user-courses.html:138
+msgid "Certificates"
+msgstr "Certificados"
+
+#: themes/default/templates/user-courses.html:178
+#: themes/default/templates/user-courses.html:228
+msgid "Request certificate"
+msgstr "Pedir certificado"
+
+#: themes/default/templates/user-courses.html:187
+msgid "You don't have receipts"
+msgstr "Você não tem comprovantes de conclusão"
+
+#: themes/default/templates/user-courses.html:258
+msgid "Show classes"
+msgstr "Mostrar turmas"
+
+#: themes/default/templates/user-courses.html:259
+msgid "Hide classes"
+msgstr "Adicionar turma"
+
+#: themes/default/templates/user-courses.html:266
+msgid "Create class"
+msgstr "Criar turma"
+
+#: themes/default/templates/user-courses.html:268
+#: themes/default/templates/user-courses.html:297
+msgid "You don't have any class in this course"
+msgstr "Você não tem nenhuma turma neste curso"
+
+#: themes/default/templates/user-courses.html:294
+msgid "Loading classes list"
+msgstr "Carregando lista de turmas"
+
+#: timtec/settings.py:82 timtec/settings_local_docker.py:84
+msgid "Brazilian Portuguese"
+msgstr "Português"
+
+#: timtec/settings.py:83 timtec/settings_local_docker.py:85
+msgid "Italian"
+msgstr "Italiano"
+
+#: timtec/settings.py:84 timtec/settings_local_docker.py:86
+msgid "Spanish"
+msgstr "Espanhol"
+
+#: timtec/settings.py:85 timtec/settings_local_docker.py:87
+msgid "English"
+msgstr "Inglês"
+
+#, fuzzy
+#~ msgid "Addicional materials"
+#~ msgstr "Materiais adicionais"
+
+#, fuzzy
+#~ msgid "next unit"
+#~ msgstr "próxima"
+
+#~ msgid "Unit"
+#~ msgstr "Unidade"
+
+#~ msgid "Units"
+#~ msgstr "Unidades"
+
+#~ msgid "Total units"
+#~ msgstr "Total de unidades"
+
+#~ msgid "votes"
+#~ msgstr "votos"
+
+#~ msgid "Address"
+#~ msgstr "Endereço"
+
+#~ msgid "Academic ID"
+#~ msgstr "Identificador de Matrícula"
+
+#~ msgid "Cpf"
+#~ msgstr "CPF"
+
+#~ msgid "Siape"
+#~ msgstr "Siape"
+
+#~ msgid "Certification"
+#~ msgstr "Certificação"
+
+#~ msgid "Open certificate processes"
+#~ msgstr "Iniciar processo de certificação"
+
+#~ msgid "E-mail or username"
+#~ msgstr "Nome de usuário ou email"
+
+#~ msgid "Signup"
+#~ msgstr "Cadastre-se"
+
+#~ msgid "Receipt Settings"
+#~ msgstr "Opções de Comprovante"
+
+#~ msgid "Instituto TIM"
+#~ msgstr "Instituto TIM"
+
+#~ msgid "My Receipts"
+#~ msgstr "Meus Comprovantes"
+
+#~ msgid "State"
+#~ msgstr "Situação"
+
+#~ msgid "More..."
+#~ msgstr "Mais..."
+
+#~ msgid ""
+#~ "There's been an error. It's been reported to the site administrators via "
+#~ "email and should be fixed shortly. Thanks for your patience."
+#~ msgstr ""
+#~ "Ocorreu um erro. Este erro será reportado aos administradores do site e será"
+#~ " corrigido em breve. Obrigado por sua paciência."
+
+#~ msgid "An error ocurred"
+#~ msgstr "Um erro ocorreu"
+
+#~ msgid "Signature"
+#~ msgstr "Assinatura"
+
+#~ msgid "Select a professor"
+#~ msgstr "Selecione um professor"
+
+#~ msgid "Save image"
+#~ msgstr "Salvar imagem"
+
+#~ msgid "Get receipt"
+#~ msgstr "Emitir comprovante"
+
+#~ msgid "Emit certificate"
+#~ msgstr "Emitir certificado"
+
+#~ msgid "Questions & Answers"
+#~ msgstr "Perguntas e Respostas"
+
+#~ msgid "Page"
+#~ msgstr "Página"
+
+#~ msgid "of"
+#~ msgstr "de"
+
+#~ msgid "New"
+#~ msgstr "Novo"
+
+#~ msgid "Publication"
+#~ msgstr "Publicação"
+
+#~ msgid "Este curso começa dia %(start_date)s e vocẽ já está inscrito."
+#~ msgstr "Este curso começa dia %(start_date)s e você já está inscrito"
+
+#~ msgid "Settings"
+#~ msgstr "Configurações"
+
+#~ msgid "New course"
+#~ msgstr "Novo curso"
+
+#~ msgid "Sort"
+#~ msgstr "Ordenação"
+
+#~ msgid "Publish in"
+#~ msgstr "Publicar em"
+
+#~ msgid "No publication date"
+#~ msgstr "Sem data de publicação"
+
+#~ msgid "Professors"
+#~ msgstr "Professores"
+
+#~ msgid "Este curso começa dia %(start_date)s"
+#~ msgstr "Este curso começa dia %(start_date)s"
+
+#~ msgid "Resume"
+#~ msgstr "Ir para o curso"
+
+#~ msgid "Annotations"
+#~ msgstr "Anotações"
+
+#~ msgid "Resume Class"
+#~ msgstr "Continuar aula"
+
+#~ msgid "Take the Class"
+#~ msgstr "Fazer o curso"
+
+#~ msgid "My notes"
+#~ msgstr "Minhas Anotações"
+
+#~ msgid "Send New Message"
+#~ msgstr "Nova mensagem"
+
+#~ msgid "Check all"
+#~ msgstr "Marcar todas"
+
+#~ msgid ""
+#~ "Please confirm that <a href=\"mailto:%(email)s\">%(email)s</a><br>is an "
+#~ "e-mail address for user %(user_display)s."
+#~ msgstr ""
+#~ "Por favor confirme que o endereço <a href=\"mailto:%(email)s\">%(email)s</a>"
+#~ " é o email do usuário %(user_display)s."
+
+#~ msgid ""
+#~ "This e-mail confirmation link expired or is invalid.</p>\n"
+#~ "                <p>Please <a href=\"%(email_url)s\">issue a new e-mail confirmation request</a>."
+#~ msgstr ""
+#~ "Este email de confirmação expirou ou é inválido.</h2> <p>Por favor <a "
+#~ "href=\"%(email_url)s\">solicite uma nova confirmação de e-mail</a>."
+
+#~ msgid ""
+#~ "The password reset link was invalid,<br>possibly because it has already been used.</p>\n"
+#~ "                <p>Please request a <a href=\"%(passwd_reset_url)s\">new password reset</a>."
+#~ msgstr ""
+#~ "O link de solicitação de redefinição de senha é inválido, possivelmente "
+#~ "porque já foi usado. Por favor solicite uma <a "
+#~ "href=\"%(passwd_reset_url)s\">nova redefinição de senha</a>."
+
+#~ msgid "Delete this course"
+#~ msgstr "Apagar este curso"
+
+#~ msgid "Delete this lesson"
+#~ msgstr "Apagar esta aula"
+
+#~ msgid "Publish lesson"
+#~ msgstr "Publicar aula"
+
+#~ msgid "Delete this activity"
+#~ msgstr "Apagar esta atividade"
+
+#~ msgid "This unit has no notes"
+#~ msgstr "Esta unidade não possui nenhuma anotação"
+
+#~ msgid "Statistics"
+#~ msgstr "Estatística"
+
+#~ msgid "Pedagogy Assistant"
+#~ msgstr "Assistente pedagógico"
+
+#~ msgid "TIM Tec"
+#~ msgstr "TIM Tec"
+
+#~ msgid "Hello world! This is HTML5 Boilerplate."
+#~ msgstr "Hello world! Esse é o HTML5 Boilerplate"
+
+#~ msgid "Learn more"
+#~ msgstr "Saiba mais"
+
+#~ msgid "Professor notes"
+#~ msgstr "Anotações do professor"
+
+#~ msgid "Professor's notes"
+#~ msgstr "Anotações do professor"
+
+#~ msgid "NAME"
+#~ msgstr "Nome"
+
+#~ msgid "Facebook Connect"
+#~ msgstr "Conectar com Facebook"
+
+#~ msgid "Add professors in course"
+#~ msgstr "Adicionar professores no curso"
+
+#~ msgid "Instrutores"
+#~ msgstr "Instrutores"
+
+#~ msgid "Novo"
+#~ msgstr "Novo"
+
+#~ msgid "correct!"
+#~ msgstr "correta!"
+
+#~ msgid "wrong"
+#~ msgstr "errada"
+
+#~ msgid "Review the video more attentively and try again"
+#~ msgstr "Reveja o video mais atentamente e tente de novo"
+
+#~ msgid "Skip"
+#~ msgstr "Pular"
+
+#~ msgid "Review the video"
+#~ msgstr "Revisar o video"
+
+#~ msgid "Private"
+#~ msgstr "Privado"
+
+#~ msgid "Course Application"
+#~ msgstr "Aplicação"
+
+#~ msgid "Position"
+#~ msgstr "Posição"
