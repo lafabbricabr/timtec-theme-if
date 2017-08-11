@@ -1,0 +1,54 @@
+{% load i18n %}
+<script type="text/ng-template" id="courseCompleteModal.html" xmlns="http://www.w3.org/1999/html">
+
+    <div class="modal-header">
+        <button type="button" class="close" ng-click="cancel()" aria-hidden="true">&times;</button>
+        <h4 class="modal-title" id="myModalLabel">
+            {% trans "End of course!" %}</h4>
+    </div>
+
+    <div class="modal-body">
+            <div class="row">
+            {% verbatim %}
+
+            <div class="col-md-12" ng-if="cs.percent_progress >= cs.min_percent_to_complete">
+
+                <p>Parabéns {{ cs.user.first_name + " " + cs.user.last_name }}!</p>
+
+                <p><strong>Você concluiu todas as aulas deste curso!</strong></p>
+
+                <p>Que tal colocar o que você aprendeu em prática e realizar os desafios do Nutrir
+                com seus alunos? Não deixe também de acessar a plataforma e publicar
+                os relatos das atividades pra gente saber como foi.</p>
+
+                <p>Se tiver qualquer dúvida, nos envie uma mensagem pelo formulário
+                de contato da plataforma ou pelo e-mail: <a href="mailto:contato@nutrirnasescolas.com.br" target="_blank">contato@nutrirnasescolas.com.br</a>.</p>
+
+                <p><strong>Obrigado pela participação!</strong></p>
+                <p><strong>Equipe Nutrir nas Escolas</strong></p>
+            </div>
+
+            <div class="col-md-12" ng-if="cs.percent_progress < cs.min_percent_to_complete">
+                <p>Olá {{ cs.user.first_name + " " + cs.user.last_name }}!</p>
+
+                <p><strong>Você chegou ao final do curso, mas ainda não concluiu todas as aulas.</strong></p>
+
+                <p>Seu percentual de realização do curso é de {{cs.percent_progress}}% e o
+                mínimo percentual exigido para conclusão neste curso é de {{cs.min_percent_to_complete}}%.</p>
+
+                <p>Verifique quais aulas você ainda não assistiu para completar o curso.
+                 Se tiver qualquer dúvida, nos envie uma mensagem pelo formulário de contato
+                 da plataforma ou pelo e-mail: <a href="mailto:contato@nutrirnasescolas.com.br" target="_blank">contato@nutrirnasescolas.com.br</a>.</p>
+
+                <p><strong>Obrigado pela participação!</strong></p>
+                <p><strong>Equipe Nutrir nas Escolas</strong></p>
+            </div>
+        {% endverbatim %}
+        </div>
+    </div>
+
+    <div class="modal-footer">
+        <button type="button" class="btn btn-danger" ng-click="cancel()">{% trans "Close" %}</button>
+    </div>
+
+</script>
