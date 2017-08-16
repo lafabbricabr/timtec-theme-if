@@ -35,6 +35,12 @@
 
 {% endblock %}
 
-{% block header_signup_link %}
-
+{% block header_signin %}
+    {% if integration_login_url %}
+        <li><a href="{{ integration_login_url }}">{% trans 'Sign In' %}</a></li>
+    {% else %}
+        {{ block.super }}
+    {% endif %}
 {% endblock %}
+
+{% block header_signup %}{% endblock %}
