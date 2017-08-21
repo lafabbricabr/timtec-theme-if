@@ -6,6 +6,11 @@
 {% load is_enrolled %}
 {% load get_flatpage %}
 
+
+
+{% block head-favicon %}
+{% endblock %}
+
 {% block home_courses_block %}
 <section id="courses" class="container">
 
@@ -49,52 +54,42 @@
 
     {% else %}
 
-            <div class="row">
-                <div class="intro-box col-xs-12">
-                    <h3 class="textcenter">Bem-vindos à formação online do Nutrir!</h3>
-                    <p>
-                        Amplie seus conhecimentos sobre educação alimentar e nutricional e educação para prática de atividade física com o Nutrir nas Escolas. 
-                        Educadores que assistirem aos dois módulos e realizarem desafios em suas escolas, ganham certificado de participação.
-                    </p>
-                </div>
-            </div>
-
         {% for course in home_courses %}
         <div class="row">
-        <div class="block course col-sm-4">
-        	{% if user|is_enrolled:course %}
-                <a href="{% url "resume_course" course.slug %}" class="course-link">
-            {% else %}
-                <a href="{% url "course_intro" course.slug %}" class="course-link">
-            {% endif %}
-                    {% if not course.has_started %}<span class="coming-soon-label">{% trans 'Soon' %}</span>{% endif %}
-                    <div class="thumb-wrapper">
-                        <span class="mouseover"></span>
-                        <span class="thumb" {% if course.home_thumbnail %}style="background-image: url({{ course.home_thumbnail.url }})"{% endif %}></span>
-                    </div>
+            <div class="block course col-sm-4">
+            	{% if user|is_enrolled:course %}
+                    <a href="{% url "resume_course" course.slug %}" class="course-link">
+                {% else %}
+                    <a href="{% url "course_intro" course.slug %}" class="course-link">
+                {% endif %}
+                        {% if not course.has_started %}<span class="coming-soon-label">{% trans 'Soon' %}</span>{% endif %}
+                        <div class="thumb-wrapper">
+                            <span class="mouseover"></span>
+                            <span class="thumb" {% if course.home_thumbnail %}style="background-image: url({{ course.home_thumbnail.url }})"{% endif %}></span>
+                        </div>
 
-                     <div class="enroll">
-                        <span>
-                            <i class="fa fa-calendar"></i> {{ course.start_date|date:'M, Y'}}
-                        </span>
-                        <span class="enroll-link textright uppercase">
-                            {% if user|is_enrolled:course %}
-                                {% trans 'Resume course' %}<i class="fa fa-angle-right"></i>
-                            {% else %}
-                                {% trans 'Go to course' %}<i class="fa fa-angle-right"></i>
-                            {% endif %}
-                        </span>
-                    </div>
-                </a>
-        </div>
-
-        <div class="block course col-sm-8">
-            <div class="info">
-            	<h3>{{ course.name }}</h3>
-                <p class="instructors">Educador(as): {{ course.authors_names }}</p>
+                         <div class="enroll">
+                            <span>
+                                <i class="fa fa-calendar"></i> {{ course.start_date|date:'M, Y'}}
+                            </span>
+                            <span class="enroll-link textright uppercase">
+                                {% if user|is_enrolled:course %}
+                                    {% trans 'Resume course' %}<i class="fa fa-angle-right"></i>
+                                {% else %}
+                                    {% trans 'Go to course' %}<i class="fa fa-angle-right"></i>
+                                {% endif %}
+                            </span>
+                        </div>
+                    </a>
             </div>
-        	<p class="resume abstract">{{ course.abstract }}</p>
-        </div>
+
+            <div class="block course col-sm-8">
+                <div class="info">
+                	<h3>{{ course.name }}</h3>
+                    <p class="instructors">Educador(as): {{ course.authors_names }}</p>
+                </div>
+            	<p class="resume abstract">{{ course.abstract }}</p>
+            </div>
         </div><!-- .row -->
         {% endfor %}
 
