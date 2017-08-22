@@ -2,6 +2,9 @@
 // ********************************************************************* //
 #main-navbar {
     box-shadow: 0 0px 16px #BBBBBB;
+    > .container {
+        position: relative;
+    }
     &.navbar-inverse {
         border: none;
         border-radius: 0;
@@ -14,19 +17,22 @@
         }
         .navbar-brand {
             .text-hide();
-            background-image: url(../img/logo_header_nutrir.svg);
-            background-position: center;
-            background-repeat: no-repeat;
-            background-size: 90%;
-            border-radius: 0;
-            border-top: none;
-            box-shadow: none;
-            width: 150px;
-            min-height: 120px;            
-            margin-left: 15px;
-            padding: 0;
-            // position: absolute;
+            background-image: url(../img/logo_header_nutrir.png);
             z-index: 900;
+            display: inline-block;
+            width: 287px;
+            height: 182px;
+            vertical-align: middle;
+            background-position: center center;
+            background-size: contain;
+            background-repeat: no-repeat;
+            position: absolute;
+            left: 0;
+            top: 0;
+            overflow: hidden;
+            text-indent: 1000%;
+            white-space: nowrap;
+
             &.navbar-brand-fundacao{
                 background-image: url(../img/logo_header_fundacao.svg);
                 width: 265px;
