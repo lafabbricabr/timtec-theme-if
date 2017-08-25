@@ -3,7 +3,6 @@
     @media (max-width: @screen-xs-max) {
         margin-top: 60px;
     }
-
     // COURSE INFO - Course intro
     // ********************************************************************* //
     .course-info {
@@ -175,7 +174,7 @@
         > h2 {
             padding: 0;
             margin: 0 0 3px;
-            font-size: 18px;
+            font-size: 19px;
         }
         a.unit {
             cursor: pointer;
@@ -201,9 +200,30 @@
             }
         }
     }
+    #lesson-header > .lesson-units > #lesson-list-dropdown {
+        > .lesson-name {
+            font-size: 22px;
+        }
+        > .dropdown-toggle {
+            margin: 10px 5px 0 5px;
+        }
+    }
+    #materials .side-notes > p {
+        font-size: 17px;
+    }
 }
 
 #course {
+    .main-header .page-header.container{
+        margin-top: 56px;
+    }
+    .course-details > div {
+        margin-top: 5px;
+        font-size: 11px;
+        .course-instructor{
+            font-size: 14px
+        }
+    }
     &.course-intro {
         #course-content {
             > .row {

@@ -135,10 +135,12 @@
                 margin-top: 10px;
             }
             a {
-                &:hover, &:active,
+                background: transparent;
                 &:visited, &:link {
-                    background: transparent;
                     color: initial;
+                }
+                &:hover, &:active{
+                    color: @brand-primary;
                 }
             }
         }

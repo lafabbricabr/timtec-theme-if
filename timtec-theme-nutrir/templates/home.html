@@ -42,9 +42,6 @@
                 <p class="abstract">{{ course.abstract }}</p>
             </div>
             <div class="enroll">
-                <span class="course-date">
-                    <i class="fa fa-calendar"></i> {{ course.start_date | date : 'MMM, yyyy' | capitalize}}
-                </span>
                 <span class="enroll-link textright uppercase">Começar curso <i class="fa fa-angle-right"></i>
                 </span>
             </div>
@@ -69,9 +66,6 @@
                         </div>
 
                          <div class="enroll">
-                            <span>
-                                <i class="fa fa-calendar"></i> {{ course.start_date|date:'M, Y'}}
-                            </span>
                             <span class="enroll-link textright uppercase">
                                 {% if user|is_enrolled:course %}
                                     {% trans 'Resume course' %}<i class="fa fa-angle-right"></i>
@@ -86,7 +80,7 @@
             <div class="block course col-sm-8">
                 <div class="info">
                 	<h3>{{ course.name }}</h3>
-                    <p class="instructors">Educador(as): {{ course.authors_names }}</p>
+                    <p class="instructors">Educadora: {{ course.authors_names }}</p>
                 </div>
             	<p class="resume abstract">{{ course.abstract }}</p>
             </div>
