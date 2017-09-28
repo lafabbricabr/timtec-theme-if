@@ -7,5 +7,8 @@
             <h1>{% trans 'My Courses' %}</h1>
         </div>
     </div>
+    {% block my-certificates-title %}{% endblock %}
+    {% block my-certificates-panel %}{% endblock %}
+    {% block view-receipt %}{% endblock %}
     {{block.super}}
 {% endblock %}

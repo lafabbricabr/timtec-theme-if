@@ -1,0 +1,13 @@
+{% extends 'default:class_edit.html' %}
+
+{% block student-certificate %}{% endblock %}
+
+{% block certificate-title %}{% endblock %}
+{% block certificate-col %}{% endblock %}
+
+{% block class_edit_allow_certification %}{% endblock %}
+
+{% if object.course.default_class == object %}
+    {% block actions-title %}{% endblock %}
+    {% block actions-col %}{% endblock %}
+{% endif %}
