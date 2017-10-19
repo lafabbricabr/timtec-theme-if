@@ -1,5 +1,5 @@
 {% extends "default:lesson.html" %}
-
+{% load i18n %}
 
 {% block content %}
 <!-- COURSE -->
@@ -47,8 +47,8 @@
 
                 <!-- NOTES -->
                 <div class="col-lg-3 col-md-3 col-sm-10 col-xs-12 col-md-offset-0 col-sm-offset-1"
-                     id="student-notes"
-                     ng-lesson-fullheight>
+                     id="student-notes">
+                        <a class="new-message btn btn-lg btn-success uppercase" ng-click="new_message()">{% trans "New Message" %}</a>
                     {% block lesson_annotation %}
                     {{ block.super }}
                     {% endblock %}
