@@ -48,13 +48,14 @@
                 <!-- NOTES -->
                 <div class="col-lg-3 col-md-3 col-sm-10 col-xs-12 col-md-offset-0 col-sm-offset-1"
                      id="student-notes">
-                        <a class="new-message btn btn-lg btn-success uppercase" ng-click="new_message()">{% trans "New Message" %}</a>
+                        <a class="new-message btn btn-lg btn-success uppercase" ng-click="new_message_to_coord()">{% trans "New Message" %}</a>
                     {% block lesson_annotation %}
                     {{ block.super }}
                     {% endblock %}
                 </div>
                 <!-- END NOTES -->
             </div>
+
             <!-- END ROW -->
 
             <div class="row">
@@ -72,7 +73,8 @@
     </section>
     <!-- END COURSE CONTENT -->
     {% block complete_modal_template %}
-    {{ block.super }}
+        {{ block.super }}
+        {% include "_modal_message_to_cord.html" %}
     {% endblock %}
 </div>
 <!-- END COURSE -->
