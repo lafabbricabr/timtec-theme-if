@@ -1,3 +1,16 @@
 {% extends 'default:base.html' %}
 
 {% block content %}{% endblock %}
+
+{% block js %}
+    {% if load_banner_nne %}
+        <script type="text/javascript">
+            window.LOAD_BANNER = true;
+        </script>
+    {% endif %}
+    {{ block.super }}
+{% endblock %}
+
+{% block modals %}
+    {% include '_modal_banner.html' %}
+{% endblock %}
