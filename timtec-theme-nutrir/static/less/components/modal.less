@@ -1,14 +1,26 @@
 // Scale up the modal
-@media screen and (min-width: @screen-tablet) {
-    .modal-dialog {
-        // max-width: 1024px;
-        // width: 80%;
-        margin-top: 60px;
-        .modal-body.banner {
-            padding: 0;
-            .img-banner{
-                width: 100%;
-            }
+
+.modal-dialog {
+    @media screen and (min-width: @screen-tablet) {
+        width: 50%;
+    }
+    margin-top: 60px;
+    .modal-body.banner {
+
+        padding: 0;
+        .img-banner{
+            width: 100%;
+        }
+        .close-banner{
+            position: absolute;
+            right: 5px;
+            top: 5px;
+            font-size: 30px;
+            background: #F6F6F6;
+            border-radius: 50%;
+            width: 35px;
+            height: 35px;
+            opacity: 0.5;
         }
     }
 }
