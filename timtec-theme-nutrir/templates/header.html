@@ -16,9 +16,9 @@
                     <span class='badge' ng-show='theres_new_messages'>{{ total_messages }}</span>
                 {% endverbatim %}
             </a>
-            {% verbatim %}
-                <ul class="dropdown-menu messages">
-                    <li ng-repeat="message in messages">
+            <ul class="dropdown-menu messages">
+                <li ng-repeat="message in messages | limitTo:5">
+                    {% verbatim %}
                         <a ng-href='{{ message.get_absolute_url }}' ng-class="{read: message.is_read}">
                             <div class='title'>
                                 <i class="fa" ng-class='{"fa-envelope": !message.is_read, "fa-envelope-open-o": message.is_read}'></i>
@@ -29,10 +29,15 @@
                         <a role="button" tabindex="0" class="pull-right delete" ng-click="delete_message(message)" title="Excluir Mensagem">
                             <i class="fa fa-times" aria-hidden="true"></i>
                         </a>
-                    </li>
-                    <li ng-show="!messages.length" class='empty'><i>Não há mensagens</i></li>
-                </ul>
-            {% endverbatim %}
+                    {% endverbatim %}
+                </li>
+                <li ng-show="!messages.length" class='empty'><i>{% trans 'There are no messages' %}</i></li>
+                <li ng-show="messages.length" class="see-all-messages">
+                    <a href="{% url 'user_all_messages' %}" class="text-center">
+                        {% trans "See All Messages" %}
+                    </a>
+                </li>
+            </ul>
         </li>
     {% endif %}
 
