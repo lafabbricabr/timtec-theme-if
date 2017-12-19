@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2017-08-11 14:22-0300\n"
+"POT-Creation-Date: 2017-12-19 19:38-0200\n"
 "PO-Revision-Date: 2017-08-11 14:24-0306\n"
 "Last-Translator:   <admin@admin.com.br>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -19,12 +19,11 @@ msgstr ""
 "X-Translated-Using: django-rosetta 0.7.6\n"
 
 #: themes/themes_custom/timtec-theme-nutrir/timtec-theme-nutrir/templates/_modal_course_complete.html:7
-#| msgid "Edit course"
 msgid "End of course!"
 msgstr "Fim do curso! "
 
-#: themes/themes_custom/timtec-theme-nutrir/timtec-theme-nutrir/templates/_modal_course_complete.html:50
-#: themes/themes_custom/timtec-theme-nutrir/timtec-theme-nutrir/templates/footer.html:40
+#: themes/themes_custom/timtec-theme-nutrir/timtec-theme-nutrir/templates/_modal_course_complete.html:51
+#: themes/themes_custom/timtec-theme-nutrir/timtec-theme-nutrir/templates/footer.html:39
 msgid "Close"
 msgstr "Fechar"
 
@@ -34,6 +33,7 @@ msgstr "Você precisa entrar ou inscrever-se para ver este conteúdo"
 
 #: themes/themes_custom/timtec-theme-nutrir/timtec-theme-nutrir/templates/account/login_modal.html:18
 #: themes/themes_custom/timtec-theme-nutrir/timtec-theme-nutrir/templates/account/login_modal.html:49
+#: themes/themes_custom/timtec-theme-nutrir/timtec-theme-nutrir/templates/header.html:48
 msgid "Sign In"
 msgstr "Entrar"
 
@@ -101,7 +101,8 @@ msgstr "Confirmação de senha"
 #: themes/themes_custom/timtec-theme-nutrir/timtec-theme-nutrir/templates/account/signup.html:194
 #: themes/themes_custom/timtec-theme-nutrir/timtec-theme-nutrir/templates/account/signup.html:329
 #, python-format
-msgid "I agree to the <a href=\"%(terms_url)s\" target=\"_blank\">Terms of Use</a>"
+msgid ""
+"I agree to the <a href=\"%(terms_url)s\" target=\"_blank\">Terms of Use</a>"
 msgstr ""
 "Eu concordo com os <a href=\"%(terms_url)s\" target=\"_blank\">Termos de "
 "Uso</a>"
@@ -121,12 +122,12 @@ msgid "Users"
 msgstr "Usuários"
 
 #: themes/themes_custom/timtec-theme-nutrir/timtec-theme-nutrir/templates/courses.html:65
-#: themes/themes_custom/timtec-theme-nutrir/timtec-theme-nutrir/templates/home.html:70
+#: themes/themes_custom/timtec-theme-nutrir/timtec-theme-nutrir/templates/home.html:59
 msgid "Soon"
 msgstr "Em breve"
 
 #: themes/themes_custom/timtec-theme-nutrir/timtec-theme-nutrir/templates/courses.html:86
-#: themes/themes_custom/timtec-theme-nutrir/timtec-theme-nutrir/templates/home.html:84
+#: themes/themes_custom/timtec-theme-nutrir/timtec-theme-nutrir/templates/home.html:70
 msgid "Go to course"
 msgstr "Ir para o curso"
 
@@ -134,16 +135,16 @@ msgstr "Ir para o curso"
 msgid "More information"
 msgstr "Mais informações"
 
-#: themes/themes_custom/timtec-theme-nutrir/timtec-theme-nutrir/templates/footer.html:23
+#: themes/themes_custom/timtec-theme-nutrir/timtec-theme-nutrir/templates/footer.html:22
 #: themes/themes_custom/timtec-theme-nutrir/timtec-theme-nutrir/templates/header.html:10
 msgid "Contact"
 msgstr "Contato"
 
-#: themes/themes_custom/timtec-theme-nutrir/timtec-theme-nutrir/templates/footer.html:32
+#: themes/themes_custom/timtec-theme-nutrir/timtec-theme-nutrir/templates/footer.html:31
 msgid "Clear"
 msgstr "Limpar"
 
-#: themes/themes_custom/timtec-theme-nutrir/timtec-theme-nutrir/templates/footer.html:33
+#: themes/themes_custom/timtec-theme-nutrir/timtec-theme-nutrir/templates/footer.html:32
 msgid "Send"
 msgstr "Enviar"
 
@@ -151,15 +152,25 @@ msgstr "Enviar"
 msgid "Messages"
 msgstr "Mensagens"
 
-#: themes/themes_custom/timtec-theme-nutrir/timtec-theme-nutrir/templates/home.html:15
+#: themes/themes_custom/timtec-theme-nutrir/timtec-theme-nutrir/templates/header.html:34
+msgid "There are no messages"
+msgstr ""
+
+#: themes/themes_custom/timtec-theme-nutrir/timtec-theme-nutrir/templates/header.html:37
+#, fuzzy
+#| msgid "Send New Message"
+msgid "See All Messages"
+msgstr "Nova mensagem"
+
+#: themes/themes_custom/timtec-theme-nutrir/timtec-theme-nutrir/templates/home.html:17
 msgid "Featured courses"
 msgstr "Cursos em destaque"
 
-#: themes/themes_custom/timtec-theme-nutrir/timtec-theme-nutrir/templates/home.html:20
+#: themes/themes_custom/timtec-theme-nutrir/timtec-theme-nutrir/templates/home.html:22
 msgid "Organize courses"
 msgstr "Organizar cursos"
 
-#: themes/themes_custom/timtec-theme-nutrir/timtec-theme-nutrir/templates/home.html:82
+#: themes/themes_custom/timtec-theme-nutrir/timtec-theme-nutrir/templates/home.html:68
 msgid "Resume course"
 msgstr "Continuar curso"
 
@@ -198,6 +209,10 @@ msgstr "Turma"
 msgid "Save"
 msgstr "Salvar"
 
+#: themes/themes_custom/timtec-theme-nutrir/timtec-theme-nutrir/templates/lesson.html:61
+msgid "New Message"
+msgstr "Nova mensagem"
+
 #: themes/themes_custom/timtec-theme-nutrir/timtec-theme-nutrir/templates/notes.html:7
 msgid "My Notes"
 msgstr "Minhas Anotações"
@@ -213,7 +228,8 @@ msgstr "Meus Cursos"
 
 #~ msgid "Usernames can only contain letters, digits and ./-/_."
 #~ msgstr ""
-#~ "Seu nome de usuário não deve conter espaço, apenas letras, números e ./-/_."
+#~ "Seu nome de usuário não deve conter espaço, apenas letras, números e ./-/"
+#~ "_."
 
 #~ msgid "Timtec Info"
 #~ msgstr "Informações do Timtec"
@@ -453,8 +469,8 @@ msgstr "Meus Cursos"
 #~ msgstr "Grupos"
 
 #~ msgid ""
-#~ "The Groups that can have access to this forum. If empty, there are no group "
-#~ "restrictions."
+#~ "The Groups that can have access to this forum. If empty, there are no "
+#~ "group restrictions."
 #~ msgstr ""
 #~ "Os grupos que possuem acesso a este fórum. Se estiver vazio, não há "
 #~ "restrições de grupos."
@@ -645,7 +661,8 @@ msgstr "Meus Cursos"
 #~ "Um erro ocorreu ou você não tem permissão para visualizar esta página."
 
 #~ msgid ""
-#~ "There's been an error. Probably you don't have permission to see this page."
+#~ "There's been an error. Probably you don't have permission to see this "
+#~ "page."
 #~ msgstr ""
 #~ "Houve um erro. Provavelmente você não possui permissão de acesso a esta "
 #~ "página. "
@@ -729,7 +746,8 @@ msgstr "Meus Cursos"
 #~ msgstr "Não"
 
 #~ msgid "Search and select a user to set as course professor"
-#~ msgstr "Busque e selecione um usuário para defini-lo como professor do curso"
+#~ msgstr ""
+#~ "Busque e selecione um usuário para defini-lo como professor do curso"
 
 #~ msgid "Type the name, email or user name of the professor to search..."
 #~ msgstr ""
@@ -892,8 +910,10 @@ msgstr "Meus Cursos"
 #~ msgstr "O registro falhou"
 
 #~ msgid ""
-#~ "You're receiving this e-mail because you or someone else has requested a password for your user account at %(site_domain)s.\n"
-#~ "It can be safely ignored if you did not request a password reset. Click the link below to reset your password.\n"
+#~ "You're receiving this e-mail because you or someone else has requested a "
+#~ "password for your user account at %(site_domain)s.\n"
+#~ "It can be safely ignored if you did not request a password reset. Click "
+#~ "the link below to reset your password.\n"
 #~ "\n"
 #~ "%(password_reset_url)s\n"
 #~ "\n"
@@ -901,8 +921,10 @@ msgstr "Meus Cursos"
 #~ "\n"
 #~ "Thanks for using our site!\n"
 #~ msgstr ""
-#~ "Você está recebendo este e-mail porque você ou alguém solicitou uma redefinição de senha para sua conta no site %(site_domain)s.\n"
-#~ "Você pode seguramente ignorar esta mensagem se você não solicitou esta redefinição de senha. Clique no link abaixo para redefinir sua senha.\n"
+#~ "Você está recebendo este e-mail porque você ou alguém solicitou uma "
+#~ "redefinição de senha para sua conta no site %(site_domain)s.\n"
+#~ "Você pode seguramente ignorar esta mensagem se você não solicitou esta "
+#~ "redefinição de senha. Clique no link abaixo para redefinir sua senha.\n"
 #~ "\n"
 #~ "%(password_reset_url)s\n"
 #~ "\n"
@@ -914,21 +936,21 @@ msgstr "Meus Cursos"
 #~ msgstr "Email de redefinição de senha"
 
 #~ msgid ""
-#~ "Please confirm that <a href=\"mailto:%(email)s\">%(email)s</a> is an e-mail "
-#~ "address for user %(user_display)s."
+#~ "Please confirm that <a href=\"mailto:%(email)s\">%(email)s</a> is an e-"
+#~ "mail address for user %(user_display)s."
 #~ msgstr ""
-#~ "Por favor confirme que o endereço <a href=\"mailto:%(email)s\">%(email)s</a>"
-#~ " é o email do usuário %(user_display)s."
+#~ "Por favor confirme que o endereço <a href=\"mailto:%(email)s\">%(email)s</"
+#~ "a> é o email do usuário %(user_display)s."
 
 #~ msgid "Confirm"
 #~ msgstr "Confirmar"
 
 #~ msgid ""
-#~ "This e-mail confirmation link expired or is invalid.<br/>Please <a "
-#~ "href=\"%(email_url)s\">issue a new e-mail confirmation request</a>."
+#~ "This e-mail confirmation link expired or is invalid.<br/>Please <a href="
+#~ "\"%(email_url)s\">issue a new e-mail confirmation request</a>."
 #~ msgstr ""
-#~ "Este email de confirmação expirou ou é inválido. Por favor <a "
-#~ "href=\"%(email_url)s\">solicite uma nova confirmação de e-mail</a>."
+#~ "Este email de confirmação expirou ou é inválido. Por favor <a href="
+#~ "\"%(email_url)s\">solicite uma nova confirmação de e-mail</a>."
 
 #~ msgid "Mission accomplished"
 #~ msgstr "Missão cumprida"
@@ -940,8 +962,8 @@ msgstr "Meus Cursos"
 #~ "Insert your e-mail so we can send you the instructions to recover your "
 #~ "password"
 #~ msgstr ""
-#~ "Insira seu email para que possamos enviar-lhe instruções para recuperar sua "
-#~ "senha"
+#~ "Insira seu email para que possamos enviar-lhe instruções para recuperar "
+#~ "sua senha"
 
 #~ msgid "Check your inbox"
 #~ msgstr "Verifica sua caixa de entrada"
@@ -958,8 +980,8 @@ msgstr "Meus Cursos"
 #~ "reset</a>."
 #~ msgstr ""
 #~ "O link de solicitação de redefinição de senha é inválido, possivelmente "
-#~ "porque já foi usado. Por favor solicite uma <a "
-#~ "href=\"%(passwd_reset_url)s\">nova redefinição de senha</a>."
+#~ "porque já foi usado. Por favor solicite uma <a href=\"%(passwd_reset_url)s"
+#~ "\">nova redefinição de senha</a>."
 
 #~ msgid "Your password is now changed."
 #~ msgstr "Sua senha foi alterada."
@@ -1080,27 +1102,27 @@ msgstr "Meus Cursos"
 #~ "The text bellow will be shown to students when they correctly finish this "
 #~ "activity."
 #~ msgstr ""
-#~ "O texto abaixo é um comentário que será exibido após o estudante responder "
-#~ "corretamente a atividade."
+#~ "O texto abaixo é um comentário que será exibido após o estudante "
+#~ "responder corretamente a atividade."
 
 #~ msgid ""
-#~ "The text bellow will be shown to students when they send a correctly answer "
-#~ "to this activity."
+#~ "The text bellow will be shown to students when they send a correctly "
+#~ "answer to this activity."
 #~ msgstr ""
-#~ "O texto abaixo é um comentário que será exibido quando o estudante responder"
-#~ " corretamente a atividade."
+#~ "O texto abaixo é um comentário que será exibido quando o estudante "
+#~ "responder corretamente a atividade."
 
 #~ msgid "If you don't fill this field, it will appear a default message."
 #~ msgstr ""
-#~ "Se você não preencher este campo, aparecerá uma mensagem padrão pré-definida"
-#~ " pelo sistema."
+#~ "Se você não preencher este campo, aparecerá uma mensagem padrão pré-"
+#~ "definida pelo sistema."
 
 #~ msgid ""
-#~ "The text bellow will be shown to students when they send a wrong answer to "
-#~ "this activity."
+#~ "The text bellow will be shown to students when they send a wrong answer "
+#~ "to this activity."
 #~ msgstr ""
-#~ "O texto abaixo é um comentário que será exibido quando estudante responder "
-#~ "incorretamente a atividade."
+#~ "O texto abaixo é um comentário que será exibido quando estudante "
+#~ "responder incorretamente a atividade."
 
 #~ msgid "Topic activity"
 #~ msgstr "Atividade do capítulo"
@@ -1202,8 +1224,8 @@ msgstr "Meus Cursos"
 #~ msgstr "Permite certificação"
 
 #~ msgid ""
-#~ "Select if this class can emmit certificates even the student didn't get the "
-#~ "minimum progress required."
+#~ "Select if this class can emmit certificates even the student didn't get "
+#~ "the minimum progress required."
 #~ msgstr ""
 #~ "Marque se esta classe pode emitir certificados mesmo que o estudante não "
 #~ "tenha atingido o progresso mínimo requerido."
@@ -1274,7 +1296,8 @@ msgstr "Meus Cursos"
 #~ msgid "Schedule one at"
 #~ msgstr "Agendar em"
 
-#~ msgid "Chose an evaluation through the left aside menu or schedule a new one."
+#~ msgid ""
+#~ "Chose an evaluation through the left aside menu or schedule a new one."
 #~ msgstr "Escolha uma avaliação pelo menu à esquerda ou agende uma nova"
 
 #~ msgid "Edit evaluation"
@@ -1437,9 +1460,6 @@ msgstr "Meus Cursos"
 #~ msgid "Recipients"
 #~ msgstr "Destinatários"
 
-#~ msgid "New Message"
-#~ msgstr "Nova mensagem"
-
 #~ msgid "Fill the message subject"
 #~ msgstr "Preencha o assunto"
 
@@ -1528,7 +1548,8 @@ msgstr "Meus Cursos"
 #~ msgstr "Falha ao fazer login na Rede Social"
 
 #~ msgid ""
-#~ "An error occurred while attempting to login via your social network account."
+#~ "An error occurred while attempting to login via your social network "
+#~ "account."
 #~ msgstr "Aconteceu um erro ao tentar autenticar usando sua rede social"
 
 #~ msgid "Login Cancelled"
@@ -1536,11 +1557,12 @@ msgstr "Meus Cursos"
 
 #~ msgid ""
 #~ "You decided to cancel logging in to our site using one of your existing "
-#~ "accounts. If this was a mistake, please proceed to <a "
-#~ "href=\"%(login_url)s\">sign in</a>."
+#~ "accounts. If this was a mistake, please proceed to <a href=\"%(login_url)s"
+#~ "\">sign in</a>."
 #~ msgstr ""
-#~ "Você decidiu cancelar o login no nosso site usando uma conta sua existente. "
-#~ "Se isso foi um engano volte para <a href=\"%(login_url)s\">entrar</a>."
+#~ "Você decidiu cancelar o login no nosso site usando uma conta sua "
+#~ "existente. Se isso foi um engano volte para <a href=\"%(login_url)s"
+#~ "\">entrar</a>."
 
 #~ msgid ""
 #~ "You are about to use your %(provider_name)s account to login to\n"
@@ -1669,8 +1691,8 @@ msgstr "Meus Cursos"
 #~ "There's been an error. It's been reported to the site administrators via "
 #~ "email and should be fixed shortly. Thanks for your patience."
 #~ msgstr ""
-#~ "Ocorreu um erro. Este erro será reportado aos administradores do site e será"
-#~ " corrigido em breve. Obrigado por sua paciência."
+#~ "Ocorreu um erro. Este erro será reportado aos administradores do site e "
+#~ "será corrigido em breve. Obrigado por sua paciência."
 
 #~ msgid "An error ocurred"
 #~ msgstr "Um erro ocorreu"
@@ -1744,33 +1766,33 @@ msgstr "Meus Cursos"
 #~ msgid "My notes"
 #~ msgstr "Minhas Anotações"
 
-#~ msgid "Send New Message"
-#~ msgstr "Nova mensagem"
-
 #~ msgid "Check all"
 #~ msgstr "Marcar todas"
 
 #~ msgid ""
-#~ "Please confirm that <a href=\"mailto:%(email)s\">%(email)s</a><br>is an "
-#~ "e-mail address for user %(user_display)s."
+#~ "Please confirm that <a href=\"mailto:%(email)s\">%(email)s</a><br>is an e-"
+#~ "mail address for user %(user_display)s."
 #~ msgstr ""
-#~ "Por favor confirme que o endereço <a href=\"mailto:%(email)s\">%(email)s</a>"
-#~ " é o email do usuário %(user_display)s."
+#~ "Por favor confirme que o endereço <a href=\"mailto:%(email)s\">%(email)s</"
+#~ "a> é o email do usuário %(user_display)s."
 
 #~ msgid ""
 #~ "This e-mail confirmation link expired or is invalid.</p>\n"
-#~ "                <p>Please <a href=\"%(email_url)s\">issue a new e-mail confirmation request</a>."
+#~ "                <p>Please <a href=\"%(email_url)s\">issue a new e-mail "
+#~ "confirmation request</a>."
 #~ msgstr ""
 #~ "Este email de confirmação expirou ou é inválido.</h2> <p>Por favor <a "
 #~ "href=\"%(email_url)s\">solicite uma nova confirmação de e-mail</a>."
 
 #~ msgid ""
-#~ "The password reset link was invalid,<br>possibly because it has already been used.</p>\n"
-#~ "                <p>Please request a <a href=\"%(passwd_reset_url)s\">new password reset</a>."
+#~ "The password reset link was invalid,<br>possibly because it has already "
+#~ "been used.</p>\n"
+#~ "                <p>Please request a <a href=\"%(passwd_reset_url)s\">new "
+#~ "password reset</a>."
 #~ msgstr ""
 #~ "O link de solicitação de redefinição de senha é inválido, possivelmente "
-#~ "porque já foi usado. Por favor solicite uma <a "
-#~ "href=\"%(passwd_reset_url)s\">nova redefinição de senha</a>."
+#~ "porque já foi usado. Por favor solicite uma <a href=\"%(passwd_reset_url)s"
+#~ "\">nova redefinição de senha</a>."
 
 #~ msgid "Delete this course"
 #~ msgstr "Apagar este curso"
